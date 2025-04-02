@@ -9,8 +9,9 @@ pinMode(9, OUTPUT);
 int currentValue = 0;
 void loop() {
   // put your main code here, to run repeatedly:
-int readValue = analogRead(A0);
-delay(1);
+int readValue = analogRead(A0) * 3;
+
+delay(10);
 tone(9, readValue);
 Serial.println(readValue);
 }
