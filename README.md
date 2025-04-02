@@ -19,4 +19,4 @@ To write and upload code to your Arduino board, you'll need the **Arduino IDE**.
 ### 3. Open and Upload Example Code
 1. Clone or download this repository:
    ```sh
-   git clone https://github.com/your-repo/hyperlabs-arduino.git
+   git clone https://github.com/cartaR02/HyperLabsArduino
