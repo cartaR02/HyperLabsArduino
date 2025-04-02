@@ -27,9 +27,6 @@ From the link copy the code, already copied since youre here
 #include <Wire.h>
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
-// Part used for the temp sensor
-#include <dht11.h>
-#define DHT11PIN 4
 
 
 
@@ -44,10 +41,6 @@ From the link copy the code, already copied since youre here
 #define OLED_RESET     -1 // Reset pin # (or -1 if sharing Arduino reset pin)
 #define SCREEN_ADDRESS 0x3C ///< See datasheet for Address; 0x3D for 128x64, 0x3C for 128x32
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
-
-
-#define LOGO_HEIGHT   16
-#define LOGO_WIDTH    16
 
 
 int ThermistorPin = 0;
@@ -66,13 +59,12 @@ Serial.begin(9600);
 
 void loop() {
 
-  
-
   displayTemp();
   display.display();
 }
 
 int calcTemp(){
+  // Dont worry about all this
   Vo = analogRead(ThermistorPin);
   R2 = R1 * (1023.0 / (float)Vo - 1.0);
   logR2 = log(R2);
