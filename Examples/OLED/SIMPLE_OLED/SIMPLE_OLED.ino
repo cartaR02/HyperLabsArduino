@@ -25,6 +25,7 @@ void setup() {
   // Initialize the OLED display with the correct voltage settings and I2C address.
   // SSD1306_SWITCHCAPVCC initializes the display with a charge pump voltage.
   display.begin(SSD1306_SWITCHCAPVCC, SCREEN_ADDRESS);
+  
 }
 
 void loop(){
