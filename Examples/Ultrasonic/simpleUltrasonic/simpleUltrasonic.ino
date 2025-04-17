@@ -1,7 +1,7 @@
 #include <HCSR04.h>
 
-#define TRIG 2
-#define ECHO 3
+#define TRIG 9
+#define ECHO 8
 #define LED 10
 
 #define MIN_DIST 0
@@ -28,8 +28,7 @@ void loop ()
   else
   {
     analogWrite(LED, 0);
-  } 
-
+  }
 
   delay(50);
 }
