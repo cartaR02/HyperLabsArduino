@@ -1,0 +1,8 @@
+project:
+  type: website
+  title: HyperLabsArduino
+
+format:
+  html:
+    theme: darkly # bootstrap theme, you can change (flatly, journal, darkly, etc.)
+    toc: true # adds a table of contents
