@@ -11,28 +11,35 @@
     "href": "report.html#table-of-contents",
     "title": "HyperLabs Arduino Workshop",
     "section": "Table of Contents",
-    "text": "Table of Contents\n\nOverview\n\nRepository Structure\n\nGetting Started\n\nExamples\nVideos and Guides\nContributing\n\nLicense"
+    "text": "Table of Contents\n\nOverview\n\nRepository Structure\n\nGetting Started\n\nExamples\nSlides\nVideos and Guides"
   },
   {
     "objectID": "report.html#overview",
     "href": "report.html#overview",
     "title": "HyperLabs Arduino Workshop",
     "section": "Overview",
-    "text": "Overview\nThe goal of this workshop/repo is to provide:\n\nHands-on example code to demonstrate how to use Arduino hardware & sensors\n\nA clean starting point for students/new users to learn how to install, configure, and upload sketches\n\nOrganized code and resources so learning is straightforward"
+    "text": "Overview\nThe goal of this workshop/repo is to provide:\n\nHands-on example code to demonstrate how to use Arduino hardware & sensors\n\nA clean starting point for students/new users to learn how to install, configure, and upload sketches\n\nOrganized code and resources so learning is straightforward\n\nGithub Repo"
   },
   {
     "objectID": "report.html#repository-structure",
     "href": "report.html#repository-structure",
     "title": "HyperLabs Arduino Workshop",
     "section": "Repository Structure",
-    "text": "Repository Structure\n\nExamples/ → Contains Arduino sketches / sample projects\n\nOthers/ → Miscellaneous files or extra resources\n\n.gitattributes → Git config for handling file endings, etc.\n\n.DS_Store → macOS system file (can be ignored)\n\nREADME.md → This document"
+    "text": "Repository Structure\n\nExamples/ → Contains Arduino sketches / sample projects\n\nOthers/ → Miscellaneous files or extra resources\n\n.gitattributes → Git config for handling file endings, etc.\n\n.DS_Store → macOS system file (can be ignored)\n\nREADME.md"
+  },
+  {
+    "objectID": "report.html#slides",
+    "href": "report.html#slides",
+    "title": "HyperLabs Arduino Workshop",
+    "section": "Slides",
+    "text": "Slides\n\nArduino Slides 1 09/18/2025"
   },
   {
     "objectID": "report.html#videos-and-guides",
     "href": "report.html#videos-and-guides",
     "title": "HyperLabs Arduino Workshop",
     "section": "Videos and Guides",
-    "text": "Videos and Guides\nHere are some helpful videos and documentation to get started with Arduino:\n\nArduino Language Reference – Official Arduino docs covering all functions, syntax, and examples.\nMark Rober Arduino Tutorial – Fun and practical Arduino introduction by Mark Rober.\n\nWhat is Arduino – Quick overview of Arduino boards and projects.\n\nArduino in 100 Seconds – Concise, beginner-friendly explanation of Arduino basics."
+    "text": "Videos and Guides\nHere are some helpful videos and documentation to get started with Arduino:\n\nArduino IDE - Offical Arduino IDE best for programming Arduino\nArduino Language Reference – Official Arduino docs covering all functions, syntax, and examples.\nMark Rober Arduino Tutorial – Fun and practical Arduino introduction by Mark Rober.\n\nWhat is Arduino – Quick overview of Arduino boards and projects.\n\nArduino in 100 Seconds – Concise, beginner-friendly explanation of Arduino basics."
   },
   {
     "objectID": "report.html#examples",
@@ -46,6 +53,6 @@
     "href": "report.html#getting-started",
     "title": "HyperLabs Arduino Workshop",
     "section": "Getting Started",
-    "text": "Getting Started\nTo use this repo:\n\nInstall Arduino IDE\nIf you haven’t already: download and install the Arduino IDE for your operating system.\nSet up your Arduino board\n\nConnect your board (e.g., Arduino Uno) to your computer via USB.\n\nOpen Arduino IDE → go to Tools → Board → select your board model.\n\nGo to Tools → Port → select the correct serial/USB port.\n\nClone or Download the Repository\n```bash git clone https://github.com/cartaR02/HyperLabsArduino.git"
+    "text": "Getting Started\nTo use this repo:\n\nInstall Arduino IDE\nIf you haven’t already: download and install the Arduino IDE for your operating system.\nSet up your Arduino board\n\nConnect your board (e.g., Arduino Uno) to your computer via USB.\n\nOpen Arduino IDE → go to Tools → Board → select your board model.\n\nGo to Tools → Port → select the correct serial/USB port."
   }
 ]
