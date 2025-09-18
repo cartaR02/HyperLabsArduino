@@ -28,15 +28,12 @@ The goal of this workshop/repo is to provide:
 
 ## Repository Structure
 
-Here’s a breakdown of the folders / files in this repo and what each is for:
+- **Examples/** → Contains Arduino sketches / sample projects  
+- **Others/** → Miscellaneous files or extra resources  
+- **.gitattributes** → Git config for handling file endings, etc.  
+- **.DS_Store** → macOS system file (can be ignored)  
+- **README.md** → This document  
 
-HyperLabsArduino/
-│
-├── Examples/ ← Contains sketch(es) / sample Arduino projects
-├── Others/ ← Miscellaneous files or extra resources
-├── .gitattributes ← Git config for handling file endings, etc.
-├── .DS_Store ← macOS system file (can be ignored)
-└── README.md ← This document
 
 
 ## Examples
