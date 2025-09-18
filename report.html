@@ -128,8 +128,8 @@ This repository supports the HyperLabs Arduino Workshop. It contains example ske
 </li>
 <li><a href="#getting-started">Getting Started</a><br>
 </li>
-<li><a href="#examples">Examples</a><br>
-</li>
+<li><a href="#examples">Examples</a></li>
+<li><a href="#help">Videos and Help</a></li>
 <li><a href="#contributing">Contributing</a><br>
 </li>
 <li><a href="#license">License</a></li>
@@ -161,74 +161,83 @@ This repository supports the HyperLabs Arduino Workshop. It contains example ske
 </li>
 <li><strong>README.md</strong> → This document</li>
 </ul>
-<hr>
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td>## Vidoes and Guides</td>
+</tr>
+<tr class="even">
+<td>Here are some videos that are easy to understand as well as the docs that are used for the arduino language</td>
+</tr>
+<tr class="odd">
+<td>- <a href="https://docs.arduino.cc/language-reference">Language Refrence</a></td>
+</tr>
+<tr class="even">
+<td>- <a href="https://www.youtube.com/watch?v=yi29dbPnu28">Mark Rober Arduino</a></td>
+</tr>
+<tr class="odd">
+<td>- <a href="https://www.youtube.com/watch?v=tiGw9PQbvrg&amp;t=402s">What is arduino</a></td>
+</tr>
+<tr class="even">
+<td>- <a href="https://www.youtube.com/watch?v=1ENiVwk8idM">Arduino in 100 seconds</a></td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="examples" class="level2">
 <h2 class="anchored" data-anchor-id="examples">Examples</h2>
 <p>The <code>Examples/</code> folder contains Arduino sketches demonstrating various components:</p>
 <table class="caption-top table">
-<colgroup>
-<col style="width: 12%">
-<col style="width: 46%">
-<col style="width: 29%">
-<col style="width: 10%">
-</colgroup>
 <thead>
 <tr class="header">
-<th>Sketch</th>
-<th>Purpose / What You’ll Learn</th>
-<th>Components Needed</th>
-<th>Notes</th>
+<th>Sensor</th>
+<th>What it is / What it does</th>
+<th>Possible Projects</th>
+<th>Code</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>BlinkLED</strong></td>
-<td>The classic “Hello World” of Arduino: makes an LED blink on and off. Teaches <code>digitalWrite()</code> and <code>delay()</code>.</td>
-<td>LED, resistor (220–330Ω), jumper wires</td>
-<td>Connect LED (through resistor) to a digital pin (e.g.&nbsp;13) and ground.</td>
+<td><strong>LED</strong></td>
+<td>Light-emitting diode; turns on/off to emit light.</td>
+<td>- Blink LED<br>- Blink with potentiometer<br>- LED patterns</td>
+<td><a href="https://github.com/cartaR02/HyperLabsArduino/blob/main/Examples/Blink/Blink.ino">Open Blink.ino</a></td>
 </tr>
 <tr class="even">
-<td><strong>ButtonInput</strong></td>
-<td>Shows how to read a button press as a digital input. Introduces pull-up/pull-down resistors.</td>
-<td>Pushbutton, resistor (if not using internal pull-up)</td>
-<td>Connect one side of button to input pin, the other to 5V/GND. Use <code>pinMode(pin, INPUT_PULLUP)</code> if needed.</td>
+<td><strong>Potentiometer</strong></td>
+<td>Variable resistor; outputs analog voltage depending on knob position.</td>
+<td>- Read analog value<br>- Control LED brightness<br>- Control servo angle</td>
+<td><a href="https://github.com/cartaR02/HyperLabsArduino/blob/main/Examples/Potentiometer/Potentiometer.ino">Open Potentiometer.ino</a></td>
 </tr>
 <tr class="odd">
-<td><strong>PotentiometerAnalog</strong></td>
-<td>Reads analog values using <code>analogRead()</code> and maps them to control output (like brightness or servo angle).</td>
-<td>Potentiometer</td>
-<td>Connect pot ends to 5V and GND, wiper to an analog input (A0–A5).</td>
+<td><strong>Piezo Buzzer</strong></td>
+<td>Produces sound when voltage is applied; can play tones or melodies.</td>
+<td>- Play a tone<br>- Simple melody<br>- Alarm signal</td>
+<td><a href="https://github.com/cartaR02/HyperLabsArduino/blob/main/Examples/Buzzer/Buzzer.ino">Open Buzzer.ino</a></td>
 </tr>
 <tr class="even">
-<td><strong>LEDFadePWM</strong></td>
-<td>Demonstrates PWM output with <code>analogWrite()</code>. Fades LED brightness smoothly.</td>
-<td>LED, resistor</td>
-<td>Use a PWM-enabled digital pin (marked with <code>~</code> on most boards).</td>
+<td><strong>DC Motor</strong></td>
+<td>Converts electrical energy to rotational motion; speed/direction controlled via PWM and driver.</td>
+<td>- Motor forward/back<br>- PWM speed control<br>- Simple robot drive</td>
+<td><a href="https://github.com/cartaR02/HyperLabsArduino/blob/main/Examples/Motor/Motor.ino">Open Motor.ino</a></td>
 </tr>
 <tr class="odd">
-<td><strong>ServoControl</strong></td>
-<td>Controls a servo motor using the <code>Servo</code> library.</td>
-<td>Servo motor, external power (if needed)</td>
-<td>Connect signal wire to a digital pin, power servo with 5V/GND. Don’t overload Arduino’s 5V pin.</td>
+<td><strong>Servo Motor</strong></td>
+<td>Motor that moves to a specific angle; controlled by PWM signal.</td>
+<td>- Sweep servo<br>- Control via potentiometer<br>- Interactive project</td>
+<td><a href="https://github.com/cartaR02/HyperLabsArduino/blob/main/Examples/Servo/Servo.ino">Open Servo.ino</a></td>
 </tr>
 <tr class="even">
-<td><strong>UltrasonicDistance</strong></td>
-<td>Uses an HC-SR04 ultrasonic sensor to measure distance. Introduces timing and calculations.</td>
-<td>Ultrasonic sensor (HC-SR04), jumper wires</td>
-<td>Connect Trigger and Echo pins to digital pins. Power with 5V/GND.</td>
+<td><strong>Ultrasonic Sensor</strong></td>
+<td>Measures distance by sending sound pulses and measuring echo time.</td>
+<td>- Measure distance<br>- Obstacle detection<br>- Parking aid</td>
+<td><a href="https://github.com/cartaR02/HyperLabsArduino/blob/main/Examples/Ultrasonic/simpleUltrasonic/simpleUltrasonic.ino">Open Ultrasonic.ino</a></td>
 </tr>
 <tr class="odd">
-<td><strong>RelaySwitch</strong></td>
-<td>Demonstrates using a relay to switch larger loads with Arduino control.</td>
-<td>Relay module, external device/load</td>
-<td>Connect relay input pin to Arduino digital output. Use proper external wiring for high-voltage devices.</td>
-</tr>
-<tr class="even">
-<td><strong>OLEDDisplay</strong></td>
-<td>Displays text/graphics on an OLED screen using the Adafruit SSD1306 library.</td>
-<td>OLED display, jumper wires</td>
-<td>Connect via I2C (SDA/SCL) or SPI depending on display. Install required libraries in Arduino IDE.</td>
+<td><strong>OLED Display</strong></td>
+<td>Small screen that shows text/graphics via I2C or SPI.</td>
+<td>- Show text<br>- Display sensor readings<br>- Simple game or graphics</td>
+<td><a href="https://github.com/cartaR02/HyperLabsArduino/blob/main/Examples/OLED/SIMPLE_OLED/SIMPLE_OLED.ino">Open OLED.ino</a></td>
 </tr>
 </tbody>
 </table>
@@ -243,7 +252,7 @@ This repository supports the HyperLabs Arduino Workshop. It contains example ske
 If you haven’t already: download and install the <a href="https://www.arduino.cc/en/software">Arduino IDE</a> for your operating system.</p></li>
 <li><p><strong>Set up your Arduino board</strong></p>
 <ul>
-<li>Connect your board (e.g.&nbsp;Arduino Uno) to your computer via USB.<br>
+<li>Connect your board (e.g., Arduino Uno) to your computer via USB.<br>
 </li>
 <li>Open Arduino IDE → go to <strong>Tools → Board</strong> → select your board model.<br>
 </li>
