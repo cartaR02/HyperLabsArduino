@@ -4,41 +4,48 @@
     "href": "report.html",
     "title": "HyperLabs Arduino Workshop",
     "section": "",
-    "text": "Welcome to HyperLabs Arduino!\nThis repository supports the HyperLabs Arduino Workshop. It contains example sketches and supporting files to help beginners get started with Arduino components and basic programming.\n\n\n\n\nOverview\n\nRepository Structure\n\nGetting Started\n\nExamples\n\nContributing\n\nLicense\n\n\n\n\n\nThe goal of this workshop/repo is to provide:\n\nHands-on example code to demonstrate how to use Arduino hardware & sensors\n\nA clean starting point for students/new users to learn how to install, configure, and upload sketches\n\nOrganized code and resources so learning is straightforward\n\n\n\n\n\n\nExamples/ → Contains Arduino sketches / sample projects\n\nOthers/ → Miscellaneous files or extra resources\n\n.gitattributes → Git config for handling file endings, etc.\n\n.DS_Store → macOS system file (can be ignored)\n\nREADME.md → This document\n\n\n\n\n\nThe Examples/ folder contains Arduino sketches demonstrating various components:\n\n\n\n\n\n\n\n\n\nSketch\nPurpose / What You’ll Learn\nComponents Needed\nNotes\n\n\n\n\nBlinkLED\nThe classic “Hello World” of Arduino: makes an LED blink on and off. Teaches digitalWrite() and delay().\nLED, resistor (220–330Ω), jumper wires\nConnect LED (through resistor) to a digital pin (e.g. 13) and ground.\n\n\nButtonInput\nShows how to read a button press as a digital input. Introduces pull-up/pull-down resistors.\nPushbutton, resistor (if not using internal pull-up)\nConnect one side of button to input pin, the other to 5V/GND. Use pinMode(pin, INPUT_PULLUP) if needed.\n\n\nPotentiometerAnalog\nReads analog values using analogRead() and maps them to control output (like brightness or servo angle).\nPotentiometer\nConnect pot ends to 5V and GND, wiper to an analog input (A0–A5).\n\n\nLEDFadePWM\nDemonstrates PWM output with analogWrite(). Fades LED brightness smoothly.\nLED, resistor\nUse a PWM-enabled digital pin (marked with ~ on most boards).\n\n\nServoControl\nControls a servo motor using the Servo library.\nServo motor, external power (if needed)\nConnect signal wire to a digital pin, power servo with 5V/GND. Don’t overload Arduino’s 5V pin.\n\n\nUltrasonicDistance\nUses an HC-SR04 ultrasonic sensor to measure distance. Introduces timing and calculations.\nUltrasonic sensor (HC-SR04), jumper wires\nConnect Trigger and Echo pins to digital pins. Power with 5V/GND.\n\n\nRelaySwitch\nDemonstrates using a relay to switch larger loads with Arduino control.\nRelay module, external device/load\nConnect relay input pin to Arduino digital output. Use proper external wiring for high-voltage devices.\n\n\nOLEDDisplay\nDisplays text/graphics on an OLED screen using the Adafruit SSD1306 library.\nOLED display, jumper wires\nConnect via I2C (SDA/SCL) or SPI depending on display. Install required libraries in Arduino IDE.\n\n\n\nEach folder contains a .ino sketch file that can be opened directly in the Arduino IDE.\n\n\n\n\nTo use this repo:\n\nInstall Arduino IDE\nIf you haven’t already: download and install the Arduino IDE for your operating system.\nSet up your Arduino board\n\nConnect your board (e.g. Arduino Uno) to your computer via USB.\n\nOpen Arduino IDE → go to Tools → Board → select your board model.\n\nGo to Tools → Port → select the correct serial/USB port.\n\nClone or Download the Repository\n```bash git clone https://github.com/cartaR02/HyperLabsArduino.git"
+    "text": "Welcome to HyperLabs Arduino!\nThis repository supports the HyperLabs Arduino Workshop. It contains example sketches and supporting files to help beginners get started with Arduino components and basic programming."
   },
   {
     "objectID": "report.html#table-of-contents",
     "href": "report.html#table-of-contents",
     "title": "HyperLabs Arduino Workshop",
-    "section": "",
-    "text": "Overview\n\nRepository Structure\n\nGetting Started\n\nExamples\n\nContributing\n\nLicense"
+    "section": "Table of Contents",
+    "text": "Table of Contents\n\nOverview\n\nRepository Structure\n\nGetting Started\n\nExamples\nVideos and Guides\nContributing\n\nLicense"
   },
   {
     "objectID": "report.html#overview",
     "href": "report.html#overview",
     "title": "HyperLabs Arduino Workshop",
-    "section": "",
-    "text": "The goal of this workshop/repo is to provide:\n\nHands-on example code to demonstrate how to use Arduino hardware & sensors\n\nA clean starting point for students/new users to learn how to install, configure, and upload sketches\n\nOrganized code and resources so learning is straightforward"
+    "section": "Overview",
+    "text": "Overview\nThe goal of this workshop/repo is to provide:\n\nHands-on example code to demonstrate how to use Arduino hardware & sensors\n\nA clean starting point for students/new users to learn how to install, configure, and upload sketches\n\nOrganized code and resources so learning is straightforward"
   },
   {
     "objectID": "report.html#repository-structure",
     "href": "report.html#repository-structure",
     "title": "HyperLabs Arduino Workshop",
-    "section": "",
-    "text": "Examples/ → Contains Arduino sketches / sample projects\n\nOthers/ → Miscellaneous files or extra resources\n\n.gitattributes → Git config for handling file endings, etc.\n\n.DS_Store → macOS system file (can be ignored)\n\nREADME.md → This document"
+    "section": "Repository Structure",
+    "text": "Repository Structure\n\nExamples/ → Contains Arduino sketches / sample projects\n\nOthers/ → Miscellaneous files or extra resources\n\n.gitattributes → Git config for handling file endings, etc.\n\n.DS_Store → macOS system file (can be ignored)\n\nREADME.md → This document"
+  },
+  {
+    "objectID": "report.html#videos-and-guides",
+    "href": "report.html#videos-and-guides",
+    "title": "HyperLabs Arduino Workshop",
+    "section": "Videos and Guides",
+    "text": "Videos and Guides\nHere are some helpful videos and documentation to get started with Arduino:\n\nArduino Language Reference – Official Arduino docs covering all functions, syntax, and examples.\nMark Rober Arduino Tutorial – Fun and practical Arduino introduction by Mark Rober.\n\nWhat is Arduino – Quick overview of Arduino boards and projects.\n\nArduino in 100 Seconds – Concise, beginner-friendly explanation of Arduino basics."
   },
   {
     "objectID": "report.html#examples",
     "href": "report.html#examples",
     "title": "HyperLabs Arduino Workshop",
-    "section": "",
-    "text": "The Examples/ folder contains Arduino sketches demonstrating various components:\n\n\n\n\n\n\n\n\n\nSketch\nPurpose / What You’ll Learn\nComponents Needed\nNotes\n\n\n\n\nBlinkLED\nThe classic “Hello World” of Arduino: makes an LED blink on and off. Teaches digitalWrite() and delay().\nLED, resistor (220–330Ω), jumper wires\nConnect LED (through resistor) to a digital pin (e.g. 13) and ground.\n\n\nButtonInput\nShows how to read a button press as a digital input. Introduces pull-up/pull-down resistors.\nPushbutton, resistor (if not using internal pull-up)\nConnect one side of button to input pin, the other to 5V/GND. Use pinMode(pin, INPUT_PULLUP) if needed.\n\n\nPotentiometerAnalog\nReads analog values using analogRead() and maps them to control output (like brightness or servo angle).\nPotentiometer\nConnect pot ends to 5V and GND, wiper to an analog input (A0–A5).\n\n\nLEDFadePWM\nDemonstrates PWM output with analogWrite(). Fades LED brightness smoothly.\nLED, resistor\nUse a PWM-enabled digital pin (marked with ~ on most boards).\n\n\nServoControl\nControls a servo motor using the Servo library.\nServo motor, external power (if needed)\nConnect signal wire to a digital pin, power servo with 5V/GND. Don’t overload Arduino’s 5V pin.\n\n\nUltrasonicDistance\nUses an HC-SR04 ultrasonic sensor to measure distance. Introduces timing and calculations.\nUltrasonic sensor (HC-SR04), jumper wires\nConnect Trigger and Echo pins to digital pins. Power with 5V/GND.\n\n\nRelaySwitch\nDemonstrates using a relay to switch larger loads with Arduino control.\nRelay module, external device/load\nConnect relay input pin to Arduino digital output. Use proper external wiring for high-voltage devices.\n\n\nOLEDDisplay\nDisplays text/graphics on an OLED screen using the Adafruit SSD1306 library.\nOLED display, jumper wires\nConnect via I2C (SDA/SCL) or SPI depending on display. Install required libraries in Arduino IDE.\n\n\n\nEach folder contains a .ino sketch file that can be opened directly in the Arduino IDE."
+    "section": "Examples",
+    "text": "Examples\nThe Examples/ folder contains Arduino sketches demonstrating various components:\n\n\n\nSensor\nWhat it is / What it does\nPossible Projects\nCode\n\n\n\n\nLED\nLight-emitting diode; turns on/off to emit light.\n- Blink LED- Blink with potentiometer- LED patterns\nOpen Blink.ino\n\n\nPotentiometer\nVariable resistor; outputs analog voltage depending on knob position.\n- Read analog value- Control LED brightness- Control servo angle\nOpen Potentiometer.ino\n\n\nPiezo Buzzer\nProduces sound when voltage is applied; can play tones or melodies.\n- Play a tone- Simple melody- Alarm signal\nOpen Buzzer.ino\n\n\nDC Motor\nConverts electrical energy to rotational motion; speed/direction controlled via PWM and driver.\n- Motor forward/back- PWM speed control- Simple robot drive\nOpen Motor.ino\n\n\nServo Motor\nMotor that moves to a specific angle; controlled by PWM signal.\n- Sweep servo- Control via potentiometer- Interactive project\nOpen Servo.ino\n\n\nUltrasonic Sensor\nMeasures distance by sending sound pulses and measuring echo time.\n- Measure distance- Obstacle detection- Parking aid\nOpen Ultrasonic.ino\n\n\nOLED Display\nSmall screen that shows text/graphics via I2C or SPI.\n- Show text- Display sensor readings- Simple game or graphics\nOpen OLED.ino\n\n\n\nEach folder contains a .ino sketch file that can be opened directly in the Arduino IDE."
   },
   {
     "objectID": "report.html#getting-started",
     "href": "report.html#getting-started",
     "title": "HyperLabs Arduino Workshop",
-    "section": "",
-    "text": "To use this repo:\n\nInstall Arduino IDE\nIf you haven’t already: download and install the Arduino IDE for your operating system.\nSet up your Arduino board\n\nConnect your board (e.g. Arduino Uno) to your computer via USB.\n\nOpen Arduino IDE → go to Tools → Board → select your board model.\n\nGo to Tools → Port → select the correct serial/USB port.\n\nClone or Download the Repository\n```bash git clone https://github.com/cartaR02/HyperLabsArduino.git"
+    "section": "Getting Started",
+    "text": "Getting Started\nTo use this repo:\n\nInstall Arduino IDE\nIf you haven’t already: download and install the Arduino IDE for your operating system.\nSet up your Arduino board\n\nConnect your board (e.g., Arduino Uno) to your computer via USB.\n\nOpen Arduino IDE → go to Tools → Board → select your board model.\n\nGo to Tools → Port → select the correct serial/USB port.\n\nClone or Download the Repository\n```bash git clone https://github.com/cartaR02/HyperLabsArduino.git"
   }
 ]
