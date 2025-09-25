@@ -164,6 +164,7 @@ This repository supports the HyperLabs Arduino Workshop. It contains example ske
 <h2 class="anchored" data-anchor-id="slides">Slides</h2>
 <ul>
 <li><a href="https://www.canva.com/design/DAGzPY7RSnw/Yf6TqiRTzH-27oPtMXnemw/view?utm_content=DAGzPY7RSnw&amp;utm_campaign=designshare&amp;utm_medium=link2&amp;utm_source=uniquelinks&amp;utlId=h0fe4a98ba1">Arduino Slides 1 09/18/2025</a></li>
+<li><a href="https://www.canva.com/design/DAGzumVJqws/vyPjJFnlcgFLvQ63QIr2jw/view?utm_content=DAGzumVJqws&amp;utm_campaign=designshare&amp;utm_medium=link2&amp;utm_source=uniquelinks&amp;utlId=h763df9ae66">Arduino Slided 2 09/25/2025</a></li>
 </ul>
 <hr>
 </section>
@@ -238,6 +239,38 @@ This repository supports the HyperLabs Arduino Workshop. It contains example ske
 </tr>
 </tbody>
 </table>
+<p>Oled Commands 🔹 Display Control</p>
+<p>display.begin(vccstate, i2caddr) – initialize display.</p>
+<p>display.display() – refresh the screen with whatever is in the buffer.</p>
+<p>display.clearDisplay() – clear the display buffer.</p>
+<p>display.dim(true/false) – dim or undim the display.</p>
+<p>display.invertDisplay(true/false) – invert pixels (white ↔︎ black).</p>
+<p>🔹 Text Functions</p>
+<p>display.setCursor(x, y) – set text position.</p>
+<p>display.setTextColor(color) – set text color (usually WHITE, sometimes BLACK for inverse).</p>
+<p>display.setTextColor(color, background) – set text color and background.</p>
+<p>display.setTextSize(n) – set text size multiplier.</p>
+<p>display.cp437(true/false) – use full 256-char font instead of ASCII.</p>
+<p>display.write(char) – write a single character.</p>
+<p>display.print(“text”) / display.println(“text”) – print text like Serial.</p>
+<p>🔹 Drawing Shapes</p>
+<p>(from Adafruit GFX, inherited by SSD1306)</p>
+<p>display.drawPixel(x, y, color) – draw a single pixel.</p>
+<p>display.drawLine(x0, y0, x1, y1, color) – draw a line.</p>
+<p>display.drawRect(x, y, w, h, color) – draw rectangle outline.</p>
+<p>display.fillRect(x, y, w, h, color) – filled rectangle.</p>
+<p>display.drawCircle(x, y, r, color) – circle outline.</p>
+<p>display.fillCircle(x, y, r, color) – filled circle.</p>
+<p>display.drawRoundRect(x, y, w, h, r, color) – rounded rectangle outline.</p>
+<p>display.fillRoundRect(x, y, w, h, r, color) – filled rounded rectangle.</p>
+<p>display.drawTriangle(x0, y0, x1, y1, x2, y2, color) – triangle outline.</p>
+<p>display.fillTriangle(x0, y0, x1, y1, x2, y2, color) – filled triangle.</p>
+<p>🔹 Bitmaps &amp; Images</p>
+<p>display.drawBitmap(x, y, bitmap, w, h, color) – draw a monochrome bitmap from an array.</p>
+<p>display.drawXBitmap(x, y, bitmap, w, h, color) – draw XBM image format.</p>
+<p>🔹 Screen Size Info</p>
+<p>display.width() – returns display width.</p>
+<p>display.height() – returns display height.</p>
 <p>Each folder contains a <code>.ino</code> sketch file that can be opened directly in the Arduino IDE.</p>
 <hr>
 </section>
