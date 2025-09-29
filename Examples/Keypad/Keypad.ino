@@ -14,10 +14,9 @@ char hexaKeys[ROWS][COLS] = {
   {'7','8','9','C'},
   {'*','0','#','D'}
 };
-
 // Assign safe Arduino pins for rows and columns
-byte rowPins[COLS] = {10, 9, 8, 7};  // Row 0 → pin 9, Row 1 → pin 8, Row 2 → pin 7, Row 3 → pin 6
-byte colPins[ROWS] = {6, 5, 4, 3};  // Col 0 → pin 5, Col 1 → pin 4, Col 2 → pin 3, Col 3 → pin 2
+byte rowPins[COLS] = {7, 8, 9, 10};  // Row 0 → pin 9, Row 1 → pin 8, Row 2 → pin 7, Row 3 → pin 6
+byte colPins[ROWS] = {3, 4, 5, 6};  // Col 0 → pin 5, Col 1 → pin 4, Col 2 → pin 3, Col 3 → pin 2
 
 // Initialize an instance of class Keypad
 Keypad customKeypad = Keypad( makeKeymap(hexaKeys), rowPins, colPins, ROWS, COLS ); 
