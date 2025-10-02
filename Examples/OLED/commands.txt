@@ -1,0 +1,64 @@
+Oled Commands
+🔹 Display Control
+
+display.begin(vccstate, i2caddr) – initialize display.
+
+display.display() – refresh the screen with whatever is in the buffer.
+
+display.clearDisplay() – clear the display buffer.
+
+display.dim(true/false) – dim or undim the display.
+
+display.invertDisplay(true/false) – invert pixels (white ↔ black).
+
+🔹 Text Functions
+
+display.setCursor(x, y) – set text position.
+
+display.setTextColor(color) – set text color (usually WHITE, sometimes BLACK for inverse).
+
+display.setTextColor(color, background) – set text color and background.
+
+display.setTextSize(n) – set text size multiplier.
+
+display.cp437(true/false) – use full 256-char font instead of ASCII.
+
+display.write(char) – write a single character.
+
+display.print("text") / display.println("text") – print text like Serial.
+
+🔹 Drawing Shapes
+
+(from Adafruit GFX, inherited by SSD1306)
+
+display.drawPixel(x, y, color) – draw a single pixel.
+
+display.drawLine(x0, y0, x1, y1, color) – draw a line.
+
+display.drawRect(x, y, w, h, color) – draw rectangle outline.
+
+display.fillRect(x, y, w, h, color) – filled rectangle.
+
+display.drawCircle(x, y, r, color) – circle outline.
+
+display.fillCircle(x, y, r, color) – filled circle.
+
+display.drawRoundRect(x, y, w, h, r, color) – rounded rectangle outline.
+
+display.fillRoundRect(x, y, w, h, r, color) – filled rounded rectangle.
+
+display.drawTriangle(x0, y0, x1, y1, x2, y2, color) – triangle outline.
+
+display.fillTriangle(x0, y0, x1, y1, x2, y2, color) – filled triangle.
+
+🔹 Bitmaps & Images
+
+display.drawBitmap(x, y, bitmap, w, h, color) – draw a monochrome bitmap from an array.
+
+display.drawXBitmap(x, y, bitmap, w, h, color) – draw XBM image format.
+
+🔹 Screen Size Info
+
+display.width() – returns display width.
+
+display.height() – returns display height.
