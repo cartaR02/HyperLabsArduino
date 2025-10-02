@@ -10,7 +10,7 @@ char hexaKeys[ROWS][COLS] = {
   {'7','8','9','*'},
   {'C','0','#','/'}
 };
-
+ // make sure the digital pins on your Arduino match the pins below? ex: rows: 9, 7, 8, 6 cols: 5, 4, 3, 2
 byte rowPins[ROWS] = {10, 9, 8, 7};   // 4 row pins
 byte colPins[COLS] = {6, 5, 4, 3};    // 4 column pins
 
