@@ -4,14 +4,14 @@
     "href": "report.html",
     "title": "HyperLabs Arduino Workshop",
     "section": "",
-    "text": "Welcome to HyperLabs Arduino!\nThis repository supports the HyperLabs Arduino Workshop. It contains example sketches and supporting files to help beginners get started with Arduino components and basic programming."
+    "text": "Welcome to HyperLabs Arduino!\nThis repository supports the HyperLabs Arduino Workshop. It contains example sketches and supporting files to help beginners get started with Arduino components and basic programming.\nTo Access the code for these examples click on the .ino file or access the entire repo here!!!"
   },
   {
     "objectID": "report.html#table-of-contents",
     "href": "report.html#table-of-contents",
     "title": "HyperLabs Arduino Workshop",
     "section": "Table of Contents",
-    "text": "Table of Contents\n\nOverview\n\nRepository Structure\n\nGetting Started\n\nExamples\nSlides\nVideos and Guides"
+    "text": "Table of Contents\n\nOverview\n\nRepository Structure\n\nSlides\nVideos and Guides\nExamples\nGetting Started"
   },
   {
     "objectID": "report.html#overview",
@@ -32,7 +32,7 @@
     "href": "report.html#slides",
     "title": "HyperLabs Arduino Workshop",
     "section": "Slides",
-    "text": "Slides\n\nArduino Slides 1 09/18/2025\nArduino Slided 2 09/25/2025"
+    "text": "Slides\n\nArduino Slides 1 09/18/2025\nArduino Slides 2 09/25/2025\nArduino Slides 3 10/03/2025"
   },
   {
     "objectID": "report.html#videos-and-guides",
