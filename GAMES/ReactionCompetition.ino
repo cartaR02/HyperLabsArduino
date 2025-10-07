@@ -1,3 +1,39 @@
+/* ===================== REACTION GAME =====================
+  
+  DESCRIPTION:
+  This is a two-player reaction speed game using an OLED display and three buttons.
+  When the screen flashes white, the first player to press their button wins!
+
+  HOW TO PLAY:
+  1. Connect all components (see wiring below).
+  2. Turn on the Arduino — the OLED will say "Press Start Button!"
+  3. Press the Start button to begin.
+  4. Wait... after a random delay, the screen will flash white.
+  5. The first player to press their button (Left or Right) after the flash wins!
+  6. The OLED will display the winner before returning to the start screen.
+
+  WHAT YOU'LL NEED:
+  - Arduino Uno (or compatible board)
+  - 0.96" or 1.3" I2C OLED display (SSD1306)
+  - 3 push buttons:
+      • Left Player button (D2 → button → GND)
+      • Right Player button (D3 → button → GND)
+      • Start button (D4 → button → GND)
+  - Breadboard and jumper wires
+
+  LIBRARIES REQUIRED:
+  - Adafruit GFX Library
+  - Adafruit SSD1306 Library
+
+  CONNECTION SUMMARY:
+  OLED → Arduino
+  ----------------
+  VCC → 5V (or 3.3V, depending on display)
+  GND → GND
+  SDA → A4
+  SCL → A5
+*/
+
 #include <Wire.h>                 
 #include <Adafruit_GFX.h>         
 #include <Adafruit_SSD1306.h>     
