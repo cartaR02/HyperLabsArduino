@@ -19,26 +19,35 @@
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 
 
-int PIN_VRX = A0;
-int PIN_VRY = A1;
-int PIN_BTN = 7;
+int PIN_VRX = A0;   // Joystick X-axis connected to analog pin A0
+int PIN_VRY = A1;   // Joystick Y-axis connected to analog pin A1
+int PIN_BTN = 7;    // Joystick button connected to digital pin 7
 
-int JOY_CENTER = 512;
-int DEADZONE = 60;  
+int JOY_CENTER = 512;  // Joystick center calibration
+int DEADZONE = 60;  // Joystick wiggle range to ignore (prevents jitter)
 int distance = 1;  //distance increment
 //Cursor
-int cursorX = SCREEN_WIDTH / 2;
-int cursorY = SCREEN_HEIGHT / 2;
+int cursorX = SCREEN_WIDTH / 2;  // Start cursor at screen center (X)
+int cursorY = SCREEN_HEIGHT / 2;  // Start cursor at screen center (Y)
 
+/*
+  checkInDeadzone():
+  Reads joystick analog value and determines if movement
+  should occur in positive, negative, or no direction.
+*/
 int checkInDeadzone(int val) {
-  int upperDeadzone = JOY_CENTER + DEADZONE;
-  int lowerDeadzone = JOY_CENTER - DEADZONE;
+  int upperDeadzone = JOY_CENTER + DEADZONE; // Sets the upper limit of the deadzone
+  int lowerDeadzone = JOY_CENTER - DEADZONE; // Sets the lower limit of the deadzone
 
   if (val > upperDeadzone) return distance;  //moves positive direction when above deadzone bound
   if (val < lowerDeadzone) return -distance; //moves negative direction when below deadzone bound
   return 0; //doesn't move when within deadzone bounds
 }
 
+/*
+  clearCanvas():
+  Clears the OLED display and re-centers the cursor.
+*/
 void clearCanvas() {
   display.clearDisplay();
 
@@ -48,39 +57,39 @@ void clearCanvas() {
 
 
 void setup() {
-  // Initialize I2C communication
-  Wire.begin();
-  pinMode(PIN_BTN, INPUT_PULLUP);
+  
+  Wire.begin();  // Initialize I2C communication
+  pinMode(PIN_BTN, INPUT_PULLUP); // Joystick button uses internal pull-up resistor
 
   // Initialize the OLED display with the correct voltage settings and I2C address.
   // SSD1306_SWITCHCAPVCC initializes the display with a charge pump voltage.
   display.begin(SSD1306_SWITCHCAPVCC, SCREEN_ADDRESS);
-  clearCanvas();
+  clearCanvas();  // Start with a blank screen
 
 }
 
 void loop(){
   
-  if (digitalRead(PIN_BTN) == LOW) {
-    clearCanvas();
-    delay(200);
+  if (digitalRead(PIN_BTN) == LOW) { // Button pressed (active = low)
+    clearCanvas(); 
+    delay(200); // Short delay
   }
 
-  int xValue = analogRead(PIN_VRY);
-  int yValue = analogRead(PIN_VRX);
+  int xValue = analogRead(PIN_VRY); // Y-axis on joystick controls X movement
+  int yValue = analogRead(PIN_VRX); // X-axis on joystick controls Y movement
 
-  int xMovement = checkInDeadzone(xValue);
-  int yMovement = -checkInDeadzone(yValue);
+  int xMovement = checkInDeadzone(xValue); // Horizontal movement
+  int yMovement = -checkInDeadzone(yValue); // Vertical movement (inverted)
 
-  int newCursorX = cursorX + xMovement; 
-  int newCursorY = cursorY + yMovement;
+  int newCursorX = cursorX + xMovement; // Computes new end point for drawLine(); (X)
+  int newCursorY = cursorY + yMovement; // Computes new end point for drawLine(); (X)
 
   display.drawLine(cursorX, cursorY, newCursorX, newCursorY, WHITE);
 
-  cursorX = newCursorX;
-  cursorY = newCursorY;
+  cursorX = newCursorX; // Update end point of the new line to be starting point of the next line (X)
+  cursorY = newCursorY; // Update end point of the new line to be starting point of the next line (X)
 
-  display.display();
+  display.display(); // Refresh the display
 
 }
 
