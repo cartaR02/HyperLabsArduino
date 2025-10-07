@@ -1,66 +1,88 @@
-#include <Wire.h>
-#include <Adafruit_GFX.h>
-#include <Adafruit_SSD1306.h>
+/*
+  Library needed: Adafruit SSD1306
+  This code uses the Adafruit SSD1306 library for controlling an OLED display.
+  Ensure you have installed the library before compiling.
+*/
 
-#define SCREEN_WIDTH 128
-#define SCREEN_HEIGHT 64
-#define OLED_ADDR 0x3C
+#include <Wire.h>               // Include the Wire library for I2C communication
+#include <Adafruit_SSD1306.h>   // Include the Adafruit SSD1306 OLED display library
 
-Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
+// Define constants for the display's dimensions
+#define SCREEN_WIDTH 128  // OLED display width, in pixels
+#define SCREEN_HEIGHT 64  // OLED display height, in pixels
 
-// Pins
-int PIN_VRX = A0;   // Joystick X
-int PIN_VRY = A1;   // Joystick Y
-int PIN_BTN = 7;    // Joystick button 
+// Define the OLED reset pin and the I2C address for the display
+#define OLED_RESET -1     // Reset pin (set to -1 if sharing Arduino reset pin)
+#define SCREEN_ADDRESS 0x3C  // I2C address for the OLED display
 
-// Joystick Setup
-int JOY_CENTER = 512;   // adjust if your center isn't ~512
-int DEADZONE  = 60;     // ignore tiny wiggles
-int MAX_STEP  = 1;      // pixels per frame
+// Create an instance of the display object using the defined width, height, I2C interface and reset pin
+Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 
-// Cursor
-int x = SCREEN_WIDTH / 2;
-int y = SCREEN_HEIGHT / 2;
 
-int stepFrom(int val) {
-  if (val > JOY_CENTER + DEADZONE) return 1;   
-  if (val < JOY_CENTER - DEADZONE) return -1;  
-  return 0;                                    
+int PIN_VRX = A0;
+int PIN_VRY = A1;
+int PIN_BTN = 7;
+
+int JOY_CENTER = 512;
+int DEADZONE = 60;  
+int distance = 1;  //distance increment
+//Cursor
+int cursorX = SCREEN_WIDTH / 2;
+int cursorY = SCREEN_HEIGHT / 2;
+
+int checkInDeadzone(int val) {
+  int upperDeadzone = JOY_CENTER + DEADZONE;
+  int lowerDeadzone = JOY_CENTER - DEADZONE;
+
+  if (val > upperDeadzone) return distance;  //moves positive direction when above deadzone bound
+  if (val < lowerDeadzone) return -distance; //moves negative direction when below deadzone bound
+  return 0; //doesn't move when within deadzone bounds
 }
 
 void clearCanvas() {
   display.clearDisplay();
-  display.display();
-  // keep cursor centered when clearing
-  x = SCREEN_WIDTH / 2;
-  y = SCREEN_HEIGHT / 2;
+
+  cursorX = SCREEN_WIDTH / 2;
+  cursorY = SCREEN_HEIGHT / 2;
 }
+
 
 void setup() {
-  pinMode(PIN_BTN, INPUT_PULLUP);
+  // Initialize I2C communication
   Wire.begin();
-  display.begin(SSD1306_SWITCHCAPVCC, OLED_ADDR);
+  pinMode(PIN_BTN, INPUT_PULLUP);
+
+  // Initialize the OLED display with the correct voltage settings and I2C address.
+  // SSD1306_SWITCHCAPVCC initializes the display with a charge pump voltage.
+  display.begin(SSD1306_SWITCHCAPVCC, SCREEN_ADDRESS);
   clearCanvas();
+
 }
 
-void loop() {
-  // Clear on click (button is LOW when pressed)
+void loop(){
+  
   if (digitalRead(PIN_BTN) == LOW) {
     clearCanvas();
-    delay(200); 
+    delay(200);
   }
 
-  int vrx = analogRead(PIN_VRY);
-  int vry = analogRead(PIN_VRX);
+  int xValue = analogRead(PIN_VRY);
+  int yValue = analogRead(PIN_VRX);
 
-  int dx = stepFrom(vrx);
-  int dy = -stepFrom(vry);
+  int xMovement = checkInDeadzone(xValue);
+  int yMovement = -checkInDeadzone(yValue);
 
-  if (dx != 0 || dy != 0) {
-    int oldX = x, oldY = y;
-    x += dx; y += dy;
-    display.drawLine(oldX, oldY, x, y, SSD1306_WHITE);
-    display.display();
-  }
+  int newCursorX = cursorX + xMovement; 
+  int newCursorY = cursorY + yMovement;
+
+  display.drawLine(cursorX, cursorY, newCursorX, newCursorY, WHITE);
+
+  cursorX = newCursorX;
+  cursorY = newCursorY;
+
+  display.display();
+
+}
+
 }
 
