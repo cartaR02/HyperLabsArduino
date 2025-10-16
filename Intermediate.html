@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>HyperLabs Arduino Workshop – HyperLabsArduino</title>
+<title>3&nbsp; Intermediate – HyperLabsArduino</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,11 +24,13 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./Beginner.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -37,7 +39,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-8ea72dc5fed832574809a9c94082fbbb.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-22381ab97ffb8a420d3841344730e94d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-4f9b853ce4cffb63a45f69a2d6d81c11.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -69,25 +71,72 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body>
+<body class="nav-sidebar floating">
 
 <div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Intermediate.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Intermediate</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">HyperLabsArduino</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">HyperLabs Arduino Workshop</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Beginner.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Beginner Workshop</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Intermediate.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Intermediate</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
+    <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#table-of-contents" id="toc-table-of-contents" class="nav-link active" data-scroll-target="#table-of-contents">Table of Contents</a></li>
-  <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#repository-structure" id="toc-repository-structure" class="nav-link" data-scroll-target="#repository-structure">Repository Structure</a></li>
-  <li><a href="#slides" id="toc-slides" class="nav-link" data-scroll-target="#slides">Slides</a></li>
-  <li><a href="#videos-and-guides" id="toc-videos-and-guides" class="nav-link" data-scroll-target="#videos-and-guides">Videos and Guides</a></li>
-  <li><a href="#examples" id="toc-examples" class="nav-link" data-scroll-target="#examples">Examples</a></li>
-  <li><a href="#getting-started" id="toc-getting-started" class="nav-link" data-scroll-target="#getting-started">Getting Started</a></li>
+  <li><a href="#table-of-contents" id="toc-table-of-contents" class="nav-link active" data-scroll-target="#table-of-contents"><span class="header-section-number">3.1</span> Table of Contents</a></li>
+  <li><a href="#slides" id="toc-slides" class="nav-link" data-scroll-target="#slides"><span class="header-section-number">3.2</span> Slides</a></li>
+  <li><a href="#videos-and-guides" id="toc-videos-and-guides" class="nav-link" data-scroll-target="#videos-and-guides"><span class="header-section-number">3.3</span> Videos and Guides</a></li>
+  <li><a href="#examples" id="toc-examples" class="nav-link" data-scroll-target="#examples"><span class="header-section-number">3.4</span> Examples</a></li>
   </ul>
 </nav>
     </div>
@@ -96,7 +145,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">HyperLabs Arduino Workshop</h1>
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Intermediate</span></h1>
 </div>
 
 
@@ -113,79 +162,31 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Welcome to <strong>HyperLabs Arduino</strong>!<br>
-This repository supports the HyperLabs Arduino Workshop. It contains example sketches and supporting files to help beginners get started with Arduino components and basic programming.</p>
-<p>To Access the code for these examples click on the .ino file or access the entire repo <a href="https://github.com/cartaR02/HyperLabsArduino">here!!!</a></p>
-<hr>
-<section id="table-of-contents" class="level2">
-<h2 class="anchored" data-anchor-id="table-of-contents">Table of Contents</h2>
+<section id="table-of-contents" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="table-of-contents"><span class="header-section-number">3.1</span> Table of Contents</h2>
 <ul>
-<li><a href="#overview">Overview</a><br>
+<li><a href="#Slides">Slides</a><br>
 </li>
-<li><a href="#repository-structure">Repository Structure</a><br>
+<li><a href="#Videos-and-Guides">Videos and Guides</a><br>
 </li>
-<li><a href="#slides">Slides</a></li>
-<li><a href="#Videos-and-guides">Videos and Guides</a></li>
-<li><a href="#examples">Examples</a></li>
-<li><a href="#getting-started">Getting Started</a></li>
+<li><a href="#Examples">Examples</a></li>
 </ul>
 <hr>
 </section>
-<section id="overview" class="level2">
-<h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>The goal of this workshop/repo is to provide:</p>
+<section id="slides" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="slides"><span class="header-section-number">3.2</span> Slides</h2>
 <ul>
-<li>Hands-on example code to demonstrate how to use Arduino hardware &amp; sensors<br>
-</li>
-<li>A clean starting point for students/new users to learn how to install, configure, and upload sketches<br>
-</li>
-<li>Organized code and resources so learning is straightforward<br>
-</li>
-<li><a href="https://github.com/cartaR02/HyperLabsArduino">Github Repo</a></li>
+<li><a href="https://www.canva.com/design/DAG17KXFD-M/yqGkV18pEtHGUXQAefJ_0Q/view?utm_content=DAG17KXFD-M&amp;utm_campaign=designshare&amp;utm_medium=link2&amp;utm_source=uniquelinks&amp;utlId=h914717a4b3">Intermediate Arduino Slides</a></li>
 </ul>
 <hr>
 </section>
-<section id="repository-structure" class="level2">
-<h2 class="anchored" data-anchor-id="repository-structure">Repository Structure</h2>
-<ul>
-<li><strong>Examples/</strong> → Contains Arduino sketches / sample projects<br>
-</li>
-<li><strong>Others/</strong> → Miscellaneous files or extra resources<br>
-</li>
-<li><strong>.gitattributes</strong> → Git config for handling file endings, etc.<br>
-</li>
-<li><strong>.DS_Store</strong> → macOS system file (can be ignored)<br>
-</li>
-<li><strong>README.md</strong></li>
-</ul>
+<section id="videos-and-guides" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="videos-and-guides"><span class="header-section-number">3.3</span> Videos and Guides</h2>
+<p>In the works</p>
 <hr>
 </section>
-<section id="slides" class="level2">
-<h2 class="anchored" data-anchor-id="slides">Slides</h2>
-<ul>
-<li><a href="https://www.canva.com/design/DAGzPY7RSnw/Yf6TqiRTzH-27oPtMXnemw/view?utm_content=DAGzPY7RSnw&amp;utm_campaign=designshare&amp;utm_medium=link2&amp;utm_source=uniquelinks&amp;utlId=h0fe4a98ba1">Arduino Slides 1 09/18/2025</a></li>
-<li><a href="https://www.canva.com/design/DAGzumVJqws/vyPjJFnlcgFLvQ63QIr2jw/view?utm_content=DAGzumVJqws&amp;utm_campaign=designshare&amp;utm_medium=link2&amp;utm_source=uniquelinks&amp;utlId=h763df9ae66">Arduino Slides 2 09/25/2025</a></li>
-<li><a href="https://www.canva.com/design/DAG0pMDub3I/zBHqySFu2HVA4R4GTNpi_g/view?utm_content=DAG0pMDub3I&amp;utm_campaign=designshare&amp;utm_medium=link2&amp;utm_source=uniquelinks&amp;utlId=hbedb9b78f4">Arduino Slides 3 10/03/2025</a></li>
-<li><a href="https://www.canva.com/design/DAG1PrvQauc/gbSY0MZsyuf4VofSwlRmKw/view?utm_content=DAG1PrvQauc&amp;utm_campaign=designshare&amp;utm_medium=link2&amp;utm_source=uniquelinks&amp;utlId=hf87150b889">Arduino Slides 4 10/09/2025</a></li>
-</ul>
-<hr>
-</section>
-<section id="videos-and-guides" class="level2">
-<h2 class="anchored" data-anchor-id="videos-and-guides">Videos and Guides</h2>
-<p>Here are some helpful videos and documentation to get started with Arduino:</p>
-<ul>
-<li><strong><a href="https://www.arduino.cc/en/software/">Arduino IDE</a></strong> - Offical Arduino IDE best for programming Arduino</li>
-<li><strong><a href="https://docs.arduino.cc/language-reference">Arduino Language Reference</a></strong> – Official Arduino docs covering all functions, syntax, and examples.</li>
-<li><strong><a href="https://www.youtube.com/watch?v=yi29dbPnu28">Mark Rober Arduino Tutorial</a></strong> – Fun and practical Arduino introduction by Mark Rober.<br>
-</li>
-<li><strong><a href="https://www.youtube.com/watch?v=tiGw9PQbvrg&amp;t=402s">What is Arduino</a></strong> – Quick overview of Arduino boards and projects.<br>
-</li>
-<li><strong><a href="https://www.youtube.com/watch?v=1ENiVwk8idM">Arduino in 100 Seconds</a></strong> – Concise, beginner-friendly explanation of Arduino basics.</li>
-</ul>
-<hr>
-</section>
-<section id="examples" class="level2">
-<h2 class="anchored" data-anchor-id="examples">Examples</h2>
+<section id="examples" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="examples"><span class="header-section-number">3.4</span> Examples</h2>
 <p>The <code>Examples/</code> folder contains Arduino sketches demonstrating various components:</p>
 <table class="caption-top table">
 <thead>
@@ -198,79 +199,14 @@ This repository supports the HyperLabs Arduino Workshop. It contains example ske
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>LED</strong></td>
-<td>Light-emitting diode; turns on/off to emit light.</td>
-<td>- Blink LED<br>- Blink with potentiometer<br>- LED patterns</td>
-<td><a href="https://github.com/cartaR02/HyperLabsArduino/blob/main/Examples/Blink/Blink.ino">Open Blink.ino</a></td>
-</tr>
-<tr class="even">
-<td><strong>Potentiometer</strong></td>
-<td>Variable resistor; outputs analog voltage depending on knob position.</td>
-<td>- Read analog value<br>- Control LED brightness<br>- Control servo angle</td>
-<td><a href="https://github.com/cartaR02/HyperLabsArduino/blob/main/Examples/Potentiometer/Potentiometer.ino">Open Potentiometer.ino</a></td>
-</tr>
-<tr class="odd">
-<td><strong>Piezo Buzzer</strong></td>
-<td>Produces sound when voltage is applied; can play tones or melodies.</td>
-<td>- Play a tone<br>- Simple melody<br>- Alarm signal</td>
-<td><a href="https://github.com/cartaR02/HyperLabsArduino/blob/main/Examples/Buzzer/Buzzer.ino">Open Buzzer.ino</a></td>
-</tr>
-<tr class="even">
-<td><strong>Servo Motor</strong></td>
-<td>Motor that moves to a specific angle; controlled by PWM signal.</td>
-<td>- Sweep servo<br>- Control via potentiometer<br>- Interactive project</td>
-<td><a href="https://github.com/cartaR02/HyperLabsArduino/blob/main/Examples/Servo/Servo.ino">Open Servo.ino</a></td>
-</tr>
-<tr class="odd">
-<td><strong>Ultrasonic Sensor</strong></td>
-<td>Measures distance by sending sound pulses and measuring echo time.</td>
-<td>- Measure distance<br>- Obstacle detection<br>- Parking aid</td>
-<td><a href="https://github.com/cartaR02/HyperLabsArduino/blob/main/Examples/Ultrasonic/simpleUltrasonic/simpleUltrasonic.ino">Open Ultrasonic.ino</a></td>
-</tr>
-<tr class="even">
-<td><strong>OLED Display</strong></td>
-<td>Small screen that shows text/graphics via I2C or SPI.</td>
-<td>- Show text<br>- Display sensor readings<br>- Simple game or graphics</td>
-<td><a href="https://github.com/cartaR02/HyperLabsArduino/blob/main/Examples/OLED/SIMPLE_OLED/SIMPLE_OLED.ino">Open OLED.ino</a> <a href="https://github.com/cartaR02/HyperLabsArduino/blob/main/Examples/OLED/commands.txt">OLED Commands</a></td>
-</tr>
-<tr class="odd">
-<td><strong>Keypad</strong></td>
-<td>Matrix of buttons arranged in rows and columns, read by scanning pins.</td>
-<td>- Enter numbers<br>- Create passcode system<br>- Control menus or options</td>
-<td><a href="https://github.com/cartaR02/HyperLabsArduino/blob/main/Examples/Keypad/Keypad.ino">Open Keypad.ino</a></td>
-</tr>
-<tr class="even">
-<td><strong>Joystick</strong></td>
-<td>Analog input device with two potentiometers (X and Y axes) and often a push button.</td>
-<td>- Control a cursor<br>- Navigate menus<br>- Control movement in a game or robot</td>
-<td><a href="https://github.com/cartaR02/HyperLabsArduino/blob/main/Examples/JoyStick/Joystick.ino">Open Joystick.ino</a></td>
-</tr>
-<tr class="odd">
-<td><strong>Coding</strong></td>
-<td>Explore just a glipse into the vast world of just coding</td>
-<td>- Learn about for loops, functions, variables, if else, return statements and much more!</td>
-<td><a href="https://github.com/cartaR02/HyperLabsArduino/blob/main/Examples/CODING/basics.ino">Open Coding.ino</a></td>
+<td><strong>IR Remote</strong></td>
+<td>Uses infrared light signals to wirelessly transmit data from a handheld remote to a receiver module. Typically used for controlling devices without physical contact.</td>
+<td>- Control LEDs remotely<br>- Change servo angle with buttons<br>- Toggle modes (e.g., lights on/off)<br>- Build a simple remote-controlled robot</td>
+<td><a href="https://github.com/...">Open IR_Remote.ino</a></td>
 </tr>
 </tbody>
 </table>
 <p>Each folder contains a <code>.ino</code> sketch file that can be opened directly in the Arduino IDE.</p>
-<hr>
-</section>
-<section id="getting-started" class="level2">
-<h2 class="anchored" data-anchor-id="getting-started">Getting Started</h2>
-<p>To use this repo:</p>
-<ol type="1">
-<li><p><strong>Install Arduino IDE</strong><br>
-If you haven’t already: download and install the <a href="https://www.arduino.cc/en/software">Arduino IDE</a> for your operating system.</p></li>
-<li><p><strong>Set up your Arduino board</strong></p>
-<ul>
-<li>Connect your board (e.g., Arduino Uno) to your computer via USB.<br>
-</li>
-<li>Open Arduino IDE → go to <strong>Tools → Board</strong> → select your board model.<br>
-</li>
-<li>Go to <strong>Tools → Port</strong> → select the correct serial/USB port.</li>
-</ul></li>
-</ol>
 
 
 </section>
@@ -366,7 +302,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/cartaR02\.github\.io\/HyperLabsArduino\/");
+      var filterRegex = new RegExp('/' + window.location.host + '/');
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -693,6 +629,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./Beginner.html" class="pagination-link" aria-label="Beginner Workshop">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Beginner Workshop</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+  </div>
+</nav>
 </div> <!-- /content -->
 
 
