@@ -1,0 +1,33 @@
+---
+title: Intermediate
+---
+
+## Table of Contents
+
+- [Slides](#Slides)  
+- [Videos and Guides](#Videos-and-Guides)  
+- [Examples](#Examples)
+---
+
+## Slides
+
+- [Intermediate Arduino Slides](https://www.canva.com/design/DAG17KXFD-M/yqGkV18pEtHGUXQAefJ_0Q/view?utm_content=DAG17KXFD-M&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h914717a4b3)
+---
+
+## Videos and Guides
+
+In the works
+
+---
+
+## Examples
+
+The `Examples/` folder contains Arduino sketches demonstrating various components:
+
+| Sensor        | What it is / What it does                                          | Possible Projects                                             | Code                                                                 |
+|---------------|--------------------------------------------------------------------|---------------------------------------------------------------|----------------------------------------------------------------------|
+| **IR Remote** | Uses infrared light signals to wirelessly transmit data from a handheld remote to a receiver module. Typically used for controlling devices without physical contact. | - Control LEDs remotely<br>- Change servo angle with buttons<br>- Toggle modes (e.g., lights on/off)<br>- Build a simple remote-controlled robot | [Open IR_Remote.ino](https://github.com/...) |
+
+
+Each folder contains a `.ino` sketch file that can be opened directly in the Arduino IDE.
+

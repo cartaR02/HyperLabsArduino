@@ -1,0 +1,44 @@
+---
+title: "HyperLabs Arduino Workshop"
+format: html
+---
+
+Welcome to **HyperLabs Arduino**!  
+This repository supports the HyperLabs Arduino Workshop. It contains example sketches and supporting files to help beginners get started with Arduino components and basic programming.
+
+To Access the code for these examples click on the .ino file or access the entire repo [here!!!](https://github.com/cartaR02/HyperLabsArduino)
+
+---
+
+## Table of Contents
+
+- [Overview](#overview)  
+- [Repository Structure](#repository-structure)  
+
+- [Beginner](Beginner.qmd)
+- [Intermediate](Intermediate.qmd)
+
+
+---
+
+## Overview
+
+The goal of this workshop/repo is to provide:
+
+- Hands-on example code to demonstrate how to use Arduino hardware & sensors  
+- A clean starting point for students/new users to learn how to install, configure, and upload sketches  
+- Organized code and resources so learning is straightforward  
+- [Github Repo](https://github.com/cartaR02/HyperLabsArduino)
+
+---
+
+## Repository Structure
+
+- **Examples/** → Contains Arduino sketches / sample projects  
+- **Others/** → Miscellaneous files or extra resources  
+- **.gitattributes** → Git config for handling file endings, etc.  
+- **.DS_Store** → macOS system file (can be ignored)  
+- **README.md** 
+
+---
+

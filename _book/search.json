@@ -1,0 +1,152 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "HyperLabsArduino",
+    "section": "",
+    "text": "0.1 Table of Contents\nWelcome to HyperLabs Arduino!\nThis repository supports the HyperLabs Arduino Workshop. It contains example sketches and supporting files to help beginners get started with Arduino components and basic programming.\nTo Access the code for these examples click on the .ino file or access the entire repo here!!!",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>HyperLabs Arduino Workshop</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#table-of-contents",
+    "href": "index.html#table-of-contents",
+    "title": "HyperLabsArduino",
+    "section": "",
+    "text": "Overview\n\nRepository Structure\nBeginner\nIntermediate",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>HyperLabs Arduino Workshop</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#overview",
+    "href": "index.html#overview",
+    "title": "HyperLabsArduino",
+    "section": "0.2 Overview",
+    "text": "0.2 Overview\nThe goal of this workshop/repo is to provide:\n\nHands-on example code to demonstrate how to use Arduino hardware & sensors\n\nA clean starting point for students/new users to learn how to install, configure, and upload sketches\n\nOrganized code and resources so learning is straightforward\n\nGithub Repo",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>HyperLabs Arduino Workshop</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#repository-structure",
+    "href": "index.html#repository-structure",
+    "title": "HyperLabsArduino",
+    "section": "0.3 Repository Structure",
+    "text": "0.3 Repository Structure\n\nExamples/ → Contains Arduino sketches / sample projects\n\nOthers/ → Miscellaneous files or extra resources\n\n.gitattributes → Git config for handling file endings, etc.\n\n.DS_Store → macOS system file (can be ignored)\n\nREADME.md",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>HyperLabs Arduino Workshop</span>"
+    ]
+  },
+  {
+    "objectID": "Beginner.html",
+    "href": "Beginner.html",
+    "title": "2  Beginner Workshop",
+    "section": "",
+    "text": "2.1 Table of Contents",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Beginner Workshop</span>"
+    ]
+  },
+  {
+    "objectID": "Beginner.html#table-of-contents",
+    "href": "Beginner.html#table-of-contents",
+    "title": "2  Beginner Workshop",
+    "section": "",
+    "text": "Slides\n\nVideos and Guides\n\nExamples\nGetting Started",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Beginner Workshop</span>"
+    ]
+  },
+  {
+    "objectID": "Beginner.html#slides",
+    "href": "Beginner.html#slides",
+    "title": "2  Beginner Workshop",
+    "section": "2.2 Slides",
+    "text": "2.2 Slides\n\nArduino Slides 1 09/18/2025\nArduino Slides 2 09/25/2025\nArduino Slides 3 10/03/2025\nArduino Slides 4 10/09/2025",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Beginner Workshop</span>"
+    ]
+  },
+  {
+    "objectID": "Beginner.html#videos-and-guides",
+    "href": "Beginner.html#videos-and-guides",
+    "title": "2  Beginner Workshop",
+    "section": "2.3 Videos and Guides",
+    "text": "2.3 Videos and Guides\nHere are some helpful videos and documentation to get started with Arduino:\n\nArduino IDE - Offical Arduino IDE best for programming Arduino\nArduino Language Reference – Official Arduino docs covering all functions, syntax, and examples.\nMark Rober Arduino Tutorial – Fun and practical Arduino introduction by Mark Rober.\n\nWhat is Arduino – Quick overview of Arduino boards and projects.\n\nArduino in 100 Seconds – Concise, beginner-friendly explanation of Arduino basics.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Beginner Workshop</span>"
+    ]
+  },
+  {
+    "objectID": "Beginner.html#examples",
+    "href": "Beginner.html#examples",
+    "title": "2  Beginner Workshop",
+    "section": "2.4 Examples",
+    "text": "2.4 Examples\nThe Examples/ folder contains Arduino sketches demonstrating various components:\n\n\n\nSensor\nWhat it is / What it does\nPossible Projects\nCode\n\n\n\n\nLED\nLight-emitting diode; turns on/off to emit light.\n- Blink LED- Blink with potentiometer- LED patterns\nOpen Blink.ino\n\n\nPotentiometer\nVariable resistor; outputs analog voltage depending on knob position.\n- Read analog value- Control LED brightness- Control servo angle\nOpen Potentiometer.ino\n\n\nPiezo Buzzer\nProduces sound when voltage is applied; can play tones or melodies.\n- Play a tone- Simple melody- Alarm signal\nOpen Buzzer.ino\n\n\nServo Motor\nMotor that moves to a specific angle; controlled by PWM signal.\n- Sweep servo- Control via potentiometer- Interactive project\nOpen Servo.ino\n\n\nUltrasonic Sensor\nMeasures distance by sending sound pulses and measuring echo time.\n- Measure distance- Obstacle detection- Parking aid\nOpen Ultrasonic.ino\n\n\nOLED Display\nSmall screen that shows text/graphics via I2C or SPI.\n- Show text- Display sensor readings- Simple game or graphics\nOpen OLED.ino OLED Commands\n\n\nKeypad\nMatrix of buttons arranged in rows and columns, read by scanning pins.\n- Enter numbers- Create passcode system- Control menus or options\nOpen Keypad.ino\n\n\nJoystick\nAnalog input device with two potentiometers (X and Y axes) and often a push button.\n- Control a cursor- Navigate menus- Control movement in a game or robot\nOpen Joystick.ino\n\n\nCoding\nExplore just a glipse into the vast world of just coding\n- Learn about for loops, functions, variables, if else, return statements and much more!\nOpen Coding.ino\n\n\n\nEach folder contains a .ino sketch file that can be opened directly in the Arduino IDE.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Beginner Workshop</span>"
+    ]
+  },
+  {
+    "objectID": "Beginner.html#getting-started",
+    "href": "Beginner.html#getting-started",
+    "title": "2  Beginner Workshop",
+    "section": "2.5 Getting Started",
+    "text": "2.5 Getting Started\nTo use this repo:\n\nInstall Arduino IDE\nIf you haven’t already: download and install the Arduino IDE for your operating system.\nSet up your Arduino board\n\nConnect your board (e.g., Arduino Uno) to your computer via USB.\n\nOpen Arduino IDE → go to Tools → Board → select your board model.\n\nGo to Tools → Port → select the correct serial/USB port.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Beginner Workshop</span>"
+    ]
+  },
+  {
+    "objectID": "Intermediate.html",
+    "href": "Intermediate.html",
+    "title": "3  Intermediate",
+    "section": "",
+    "text": "3.1 Table of Contents",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Intermediate</span>"
+    ]
+  },
+  {
+    "objectID": "Intermediate.html#table-of-contents",
+    "href": "Intermediate.html#table-of-contents",
+    "title": "3  Intermediate",
+    "section": "",
+    "text": "Slides\n\nVideos and Guides\n\nExamples",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Intermediate</span>"
+    ]
+  },
+  {
+    "objectID": "Intermediate.html#slides",
+    "href": "Intermediate.html#slides",
+    "title": "3  Intermediate",
+    "section": "3.2 Slides",
+    "text": "3.2 Slides\n\nIntermediate Arduino Slides",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Intermediate</span>"
+    ]
+  },
+  {
+    "objectID": "Intermediate.html#videos-and-guides",
+    "href": "Intermediate.html#videos-and-guides",
+    "title": "3  Intermediate",
+    "section": "3.3 Videos and Guides",
+    "text": "3.3 Videos and Guides\nIn the works",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Intermediate</span>"
+    ]
+  },
+  {
+    "objectID": "Intermediate.html#examples",
+    "href": "Intermediate.html#examples",
+    "title": "3  Intermediate",
+    "section": "3.4 Examples",
+    "text": "3.4 Examples\nThe Examples/ folder contains Arduino sketches demonstrating various components:\n\n\n\nSensor\nWhat it is / What it does\nPossible Projects\nCode\n\n\n\n\nIR Remote\nUses infrared light signals to wirelessly transmit data from a handheld remote to a receiver module. Typically used for controlling devices without physical contact.\n- Control LEDs remotely- Change servo angle with buttons- Toggle modes (e.g., lights on/off)- Build a simple remote-controlled robot\nOpen IR_Remote.ino\n\n\n\nEach folder contains a .ino sketch file that can be opened directly in the Arduino IDE.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Intermediate</span>"
+    ]
+  }
+]

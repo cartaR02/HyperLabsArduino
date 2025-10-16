@@ -1,7 +1,12 @@
 project:
-  type: website
+  type: book
   title: HyperLabsArduino
-
+book:
+  title: "HyperLabsArduino"
+  chapters:
+    - index.qmd
+    - Beginner.qmd
+    - Intermediate.qmd
 format:
   html:
     theme: darkly # bootstrap theme, you can change (flatly, journal, darkly, etc.)
