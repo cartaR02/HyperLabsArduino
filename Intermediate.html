@@ -137,7 +137,6 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#slides" id="toc-slides" class="nav-link" data-scroll-target="#slides"><span class="header-section-number">3.2</span> Slides</a></li>
   <li><a href="#videos-and-guides" id="toc-videos-and-guides" class="nav-link" data-scroll-target="#videos-and-guides"><span class="header-section-number">3.3</span> Videos and Guides</a></li>
   <li><a href="#examples" id="toc-examples" class="nav-link" data-scroll-target="#examples"><span class="header-section-number">3.4</span> Examples</a></li>
-  <li><a href="#bluetooth-guide" id="toc-bluetooth-guide" class="nav-link" data-scroll-target="#bluetooth-guide"><span class="header-section-number">3.5</span> Bluetooth Guide</a></li>
   </ul>
 </nav>
     </div>
@@ -214,11 +213,44 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Arduino Bluetooth Connection Steps
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<section id="instructions" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="instructions"><span class="header-section-number">3.5</span> Instructions</h2>
+<ol type="1">
+<li><p><strong>Upload Code:</strong> First, connect your Arduino via USB. Upload your code to the board using the standard <code>usbmodem</code> port.</p></li>
+<li><p><strong>Pair Bluetooth:</strong> Disconnect the USB cable (if powering separately) or just leave it. On your computer, find the Bluetooth module in your Bluetooth settings and pair with it. When prompted, use the password <code>1234</code>.</p></li>
+<li><p><strong>Connect in Software:</strong></p>
+<ul>
+<li>Once your computer confirms the device is paired, go back to the Arduino IDE (or your serial monitor software).</li>
+<li>Go to the <strong>Tools &gt; Port</strong> menu.</li>
+<li><strong>Crucially:</strong> Select the <em>new</em> Bluetooth port (it will have a different name, often containing “Bluetooth” or “HC-05”). <strong>Do not</strong> select the old <code>usbmodem</code> port.</li>
+<li>Open the Serial Monitor. It should now be connected wirelessly.</li>
+</ul></li>
+</ol>
+<hr>
 </section>
-<section id="bluetooth-guide" class="level2" data-number="3.5">
-<h2 data-number="3.5" class="anchored" data-anchor-id="bluetooth-guide"><span class="header-section-number">3.5</span> Bluetooth Guide</h2>
-<p>Follow order Upload code to the usbmodem port for arduino. Pair bluetooth with password “1234” Go into the port once paired and click on bluetooth port Note: do not just click connect on the bluetooth screen on your computer It should work</p>
-<p>Things that wont work: Unplugging or removing power from bluetooth and just connecting in arduino port Doing this will require a reconnect (annoying I know) Each folder contains a <code>.ino</code> sketch file that can be opened directly in the Arduino IDE.</p>
+<section id="important-notes-troubleshooting" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="important-notes-troubleshooting"><span class="header-section-number">3.6</span> ⚠️ Important Notes &amp; Troubleshooting</h2>
+<ul>
+<li><p><strong>Do not</strong> just click “Connect” from your computer’s main Bluetooth settings panel after pairing. You <strong>must</strong> select the correct serial port from within the Arduino IDE’s <code>Port</code> menu.</p></li>
+<li><p><strong>Power Loss:</strong> If you unplug or remove power from the Bluetooth module, it will disconnect. You will need to re-select the port or (in some cases) re-pair the device to reconnect. Simply having the port open in the Arduino IDE will not work after a power cycle.</p></li>
+</ul>
+</section>
+</div>
+</div>
+</div>
+<p>Each folder contains a <code>.ino</code> sketch file that can be opened directly in the Arduino IDE.</p>
 
 
 </section>
