@@ -124,7 +124,7 @@
     "href": "Intermediate.html#slides",
     "title": "3  Intermediate",
     "section": "3.2 Slides",
-    "text": "3.2 Slides\n\nIntermediate Arduino Slides",
+    "text": "3.2 Slides\n\nIntermediate Arduino Slides\nIntermediate #2 Arduino Slides 10/23/2025",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Intermediate</span>"
     ]
@@ -144,7 +144,17 @@
     "href": "Intermediate.html#examples",
     "title": "3  Intermediate",
     "section": "3.4 Examples",
-    "text": "3.4 Examples\nThe Examples/ folder contains Arduino sketches demonstrating various components:\n\n\n\nSensor\nWhat it is / What it does\nPossible Projects\nCode\n\n\n\n\nIR Remote\nUses infrared light signals to wirelessly transmit data from a handheld remote to a receiver module. Typically used for controlling devices without physical contact.\n- Control LEDs remotely- Change servo angle with buttons- Toggle modes (e.g., lights on/off)- Build a simple remote-controlled robot\nOpen IR_Remote.ino\n\n\n\nEach folder contains a .ino sketch file that can be opened directly in the Arduino IDE.",
+    "text": "3.4 Examples\nThe Examples/ folder contains Arduino sketches demonstrating various components:\n\n\n\nSensor\nWhat it is / What it does\nPossible Projects\nCode\n\n\n\n\nIR Remote\nUses infrared light signals to wirelessly transmit data from a handheld remote to a receiver module. Typically used for controlling devices without physical contact.\n- Control LEDs remotely- Change servo angle with buttons- Toggle modes (e.g., lights on/off)- Build a simple remote-controlled robot\nOpen IR_Remote.ino\n\n\nBluetooth\nUses radio waves (2.4 GHz) to create a short-range wireless connection. Allowing your Arduino to send/receive data wirelessyly from a computer, smartphone, or another Bluetooth module.\n- Control Lights with Phone.  - Use inputs to control wheels on a robot car\nOpen Bluetooth.ino",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Intermediate</span>"
+    ]
+  },
+  {
+    "objectID": "Intermediate.html#bluetooth-guide",
+    "href": "Intermediate.html#bluetooth-guide",
+    "title": "3  Intermediate",
+    "section": "3.5 Bluetooth Guide",
+    "text": "3.5 Bluetooth Guide\nFollow order Upload code to the usbmodem port for arduino. Pair bluetooth with password “1234” Go into the port once paired and click on bluetooth port Note: do not just click connect on the bluetooth screen on your computer It should work\nThings that wont work: Unplugging or removing power from bluetooth and just connecting in arduino port Doing this will require a reconnect (annoying I know) Each folder contains a .ino sketch file that can be opened directly in the Arduino IDE.",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Intermediate</span>"
     ]

@@ -137,6 +137,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#slides" id="toc-slides" class="nav-link" data-scroll-target="#slides"><span class="header-section-number">3.2</span> Slides</a></li>
   <li><a href="#videos-and-guides" id="toc-videos-and-guides" class="nav-link" data-scroll-target="#videos-and-guides"><span class="header-section-number">3.3</span> Videos and Guides</a></li>
   <li><a href="#examples" id="toc-examples" class="nav-link" data-scroll-target="#examples"><span class="header-section-number">3.4</span> Examples</a></li>
+  <li><a href="#bluetooth-guide" id="toc-bluetooth-guide" class="nav-link" data-scroll-target="#bluetooth-guide"><span class="header-section-number">3.5</span> Bluetooth Guide</a></li>
   </ul>
 </nav>
     </div>
@@ -177,6 +178,7 @@ ul.task-list li input[type="checkbox"] {
 <h2 data-number="3.2" class="anchored" data-anchor-id="slides"><span class="header-section-number">3.2</span> Slides</h2>
 <ul>
 <li><a href="https://www.canva.com/design/DAG17KXFD-M/yqGkV18pEtHGUXQAefJ_0Q/view?utm_content=DAG17KXFD-M&amp;utm_campaign=designshare&amp;utm_medium=link2&amp;utm_source=uniquelinks&amp;utlId=h914717a4b3">Intermediate Arduino Slides</a></li>
+<li><a href="https://www.canva.com/design/DAG2k6xpiwE/JN2U8u0aOtUsVZERGWss5A/view?utm_content=DAG2k6xpiwE&amp;utm_campaign=designshare&amp;utm_medium=link2&amp;utm_source=uniquelinks&amp;utlId=hc0ff8eca98">Intermediate #2 Arduino Slides 10/23/2025</a></li>
 </ul>
 <hr>
 </section>
@@ -202,11 +204,21 @@ ul.task-list li input[type="checkbox"] {
 <td><strong>IR Remote</strong></td>
 <td>Uses infrared light signals to wirelessly transmit data from a handheld remote to a receiver module. Typically used for controlling devices without physical contact.</td>
 <td>- Control LEDs remotely<br>- Change servo angle with buttons<br>- Toggle modes (e.g., lights on/off)<br>- Build a simple remote-controlled robot</td>
-<td><a href="https://github.com/...">Open IR_Remote.ino</a></td>
+<td><a href="https://github.com/cartaR02/HyperLabsArduino/blob/main/INTERMEDIATEEXAMPLE/IRREMOTE/IR%20Remote">Open IR_Remote.ino</a></td>
+</tr>
+<tr class="even">
+<td><strong>Bluetooth</strong></td>
+<td>Uses radio waves (2.4 GHz) to create a short-range wireless connection. Allowing your Arduino to send/receive data wirelessyly from a computer, smartphone, or another Bluetooth module.</td>
+<td>- Control Lights with Phone. <br> - Use inputs to control wheels on a robot car</td>
+<td><a href="https://github.com/cartaR02/HyperLabsArduino/blob/main/INTERMEDIATEEXAMPLE/BLUETOOTH/controlLED.ino">Open Bluetooth.ino</a></td>
 </tr>
 </tbody>
 </table>
-<p>Each folder contains a <code>.ino</code> sketch file that can be opened directly in the Arduino IDE.</p>
+</section>
+<section id="bluetooth-guide" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="bluetooth-guide"><span class="header-section-number">3.5</span> Bluetooth Guide</h2>
+<p>Follow order Upload code to the usbmodem port for arduino. Pair bluetooth with password “1234” Go into the port once paired and click on bluetooth port Note: do not just click connect on the bluetooth screen on your computer It should work</p>
+<p>Things that wont work: Unplugging or removing power from bluetooth and just connecting in arduino port Doing this will require a reconnect (annoying I know) Each folder contains a <code>.ino</code> sketch file that can be opened directly in the Arduino IDE.</p>
 
 
 </section>
