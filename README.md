@@ -2,7 +2,8 @@ Welcome to **HyperLabs Arduino**!
 This repository supports the HyperLabs Arduino Workshop. It contains example sketches and supporting files to help beginners get started with Arduino components and basic programming.
 
 ---
-
+To publish to github use:
+quarto publish gh-pages
 ## Table of Contents
 
 - [Overview](#overview)

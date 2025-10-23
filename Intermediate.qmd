@@ -12,6 +12,7 @@ title: Intermediate
 ## Slides
 
 - [Intermediate Arduino Slides](https://www.canva.com/design/DAG17KXFD-M/yqGkV18pEtHGUXQAefJ_0Q/view?utm_content=DAG17KXFD-M&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h914717a4b3)
+- [Intermediate #2 Arduino Slides 10/23/2025](https://www.canva.com/design/DAG2k6xpiwE/JN2U8u0aOtUsVZERGWss5A/view?utm_content=DAG2k6xpiwE&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc0ff8eca98)
 ---
 
 ## Videos and Guides
@@ -26,8 +27,32 @@ The `Examples/` folder contains Arduino sketches demonstrating various component
 
 | Sensor        | What it is / What it does                                          | Possible Projects                                             | Code                                                                 |
 |---------------|--------------------------------------------------------------------|---------------------------------------------------------------|----------------------------------------------------------------------|
-| **IR Remote** | Uses infrared light signals to wirelessly transmit data from a handheld remote to a receiver module. Typically used for controlling devices without physical contact. | - Control LEDs remotely<br>- Change servo angle with buttons<br>- Toggle modes (e.g., lights on/off)<br>- Build a simple remote-controlled robot | [Open IR_Remote.ino](https://github.com/...) |
+| **IR Remote** | Uses infrared light signals to wirelessly transmit data from a handheld remote to a receiver module. Typically used for controlling devices without physical contact. | - Control LEDs remotely<br>- Change servo angle with buttons<br>- Toggle modes (e.g., lights on/off)<br>- Build a simple remote-controlled robot | [Open IR_Remote.ino](https://github.com/cartaR02/HyperLabsArduino/blob/main/INTERMEDIATEEXAMPLE/IRREMOTE/IR%20Remote) |
+| **Bluetooth** | Uses radio waves (2.4 GHz) to create a short-range wireless connection. Allowing your Arduino to send/receive data wirelessyly from a computer, smartphone, or another Bluetooth module. | - Control Lights with Phone. <br> - Use inputs to control wheels on a robot car | [Open Bluetooth.ino](https://github.com/cartaR02/HyperLabsArduino/blob/main/INTERMEDIATEEXAMPLE/BLUETOOTH/controlLED.ino) |
 
+::: {.callout-note collapse="true"}
+# Arduino Bluetooth Connection Steps
+
+## Instructions
+
+1.  **Upload Code:** First, connect your Arduino via USB. Upload your code to the board using the standard `usbmodem` port.
+
+2.  **Pair Bluetooth:** Disconnect the USB cable (if powering separately) or just leave it. On your computer, find the Bluetooth module in your Bluetooth settings and pair with it. When prompted, use the password `1234`.
+
+3.  **Connect in Software:**
+    * Once your computer confirms the device is paired, go back to the Arduino IDE (or your serial monitor software).
+    * Go to the **Tools > Port** menu.
+    * **Crucially:** Select the *new* Bluetooth port (it will have a different name, often containing "Bluetooth" or "HC-05"). **Do not** select the old `usbmodem` port.
+    * Open the Serial Monitor. It should now be connected wirelessly.
+
+---
+
+## ⚠️ Important Notes & Troubleshooting
+
+* **Do not** just click "Connect" from your computer's main Bluetooth settings panel after pairing. You **must** select the correct serial port from within the Arduino IDE's `Port` menu.
+
+* **Power Loss:** If you unplug or remove power from the Bluetooth module, it will disconnect. You will need to re-select the port or (in some cases) re-pair the device to reconnect. Simply having the port open in the Arduino IDE will not work after a power cycle.
+:::
 
 Each folder contains a `.ino` sketch file that can be opened directly in the Arduino IDE.
 

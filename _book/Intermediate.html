@@ -177,6 +177,7 @@ ul.task-list li input[type="checkbox"] {
 <h2 data-number="3.2" class="anchored" data-anchor-id="slides"><span class="header-section-number">3.2</span> Slides</h2>
 <ul>
 <li><a href="https://www.canva.com/design/DAG17KXFD-M/yqGkV18pEtHGUXQAefJ_0Q/view?utm_content=DAG17KXFD-M&amp;utm_campaign=designshare&amp;utm_medium=link2&amp;utm_source=uniquelinks&amp;utlId=h914717a4b3">Intermediate Arduino Slides</a></li>
+<li><a href="https://www.canva.com/design/DAG2k6xpiwE/JN2U8u0aOtUsVZERGWss5A/view?utm_content=DAG2k6xpiwE&amp;utm_campaign=designshare&amp;utm_medium=link2&amp;utm_source=uniquelinks&amp;utlId=hc0ff8eca98">Intermediate #2 Arduino Slides 10/23/2025</a></li>
 </ul>
 <hr>
 </section>
@@ -202,10 +203,53 @@ ul.task-list li input[type="checkbox"] {
 <td><strong>IR Remote</strong></td>
 <td>Uses infrared light signals to wirelessly transmit data from a handheld remote to a receiver module. Typically used for controlling devices without physical contact.</td>
 <td>- Control LEDs remotely<br>- Change servo angle with buttons<br>- Toggle modes (e.g., lights on/off)<br>- Build a simple remote-controlled robot</td>
-<td><a href="https://github.com/...">Open IR_Remote.ino</a></td>
+<td><a href="https://github.com/cartaR02/HyperLabsArduino/blob/main/INTERMEDIATEEXAMPLE/IRREMOTE/IR%20Remote">Open IR_Remote.ino</a></td>
+</tr>
+<tr class="even">
+<td><strong>Bluetooth</strong></td>
+<td>Uses radio waves (2.4 GHz) to create a short-range wireless connection. Allowing your Arduino to send/receive data wirelessyly from a computer, smartphone, or another Bluetooth module.</td>
+<td>- Control Lights with Phone. <br> - Use inputs to control wheels on a robot car</td>
+<td><a href="https://github.com/cartaR02/HyperLabsArduino/blob/main/INTERMEDIATEEXAMPLE/BLUETOOTH/controlLED.ino">Open Bluetooth.ino</a></td>
 </tr>
 </tbody>
 </table>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Arduino Bluetooth Connection Steps
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<section id="instructions" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="instructions"><span class="header-section-number">3.5</span> Instructions</h2>
+<ol type="1">
+<li><p><strong>Upload Code:</strong> First, connect your Arduino via USB. Upload your code to the board using the standard <code>usbmodem</code> port.</p></li>
+<li><p><strong>Pair Bluetooth:</strong> Disconnect the USB cable (if powering separately) or just leave it. On your computer, find the Bluetooth module in your Bluetooth settings and pair with it. When prompted, use the password <code>1234</code>.</p></li>
+<li><p><strong>Connect in Software:</strong></p>
+<ul>
+<li>Once your computer confirms the device is paired, go back to the Arduino IDE (or your serial monitor software).</li>
+<li>Go to the <strong>Tools &gt; Port</strong> menu.</li>
+<li><strong>Crucially:</strong> Select the <em>new</em> Bluetooth port (it will have a different name, often containing “Bluetooth” or “HC-05”). <strong>Do not</strong> select the old <code>usbmodem</code> port.</li>
+<li>Open the Serial Monitor. It should now be connected wirelessly.</li>
+</ul></li>
+</ol>
+<hr>
+</section>
+<section id="important-notes-troubleshooting" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="important-notes-troubleshooting"><span class="header-section-number">3.6</span> ⚠️ Important Notes &amp; Troubleshooting</h2>
+<ul>
+<li><p><strong>Do not</strong> just click “Connect” from your computer’s main Bluetooth settings panel after pairing. You <strong>must</strong> select the correct serial port from within the Arduino IDE’s <code>Port</code> menu.</p></li>
+<li><p><strong>Power Loss:</strong> If you unplug or remove power from the Bluetooth module, it will disconnect. You will need to re-select the port or (in some cases) re-pair the device to reconnect. Simply having the port open in the Arduino IDE will not work after a power cycle.</p></li>
+</ul>
+</section>
+</div>
+</div>
+</div>
 <p>Each folder contains a <code>.ino</code> sketch file that can be opened directly in the Arduino IDE.</p>
 
 
