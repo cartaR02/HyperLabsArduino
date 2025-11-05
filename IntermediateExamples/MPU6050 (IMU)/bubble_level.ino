@@ -70,9 +70,9 @@ void loop() {
 
   // --- Map the angles to OLED pixel coordinates ---
   // Roll controls horizontal (x) position
-  int x = map(roll_c,  -30, 30, 10, SCREEN_WIDTH  - 10);
+  int x = map(-roll_c,  -30, 30, 10, SCREEN_WIDTH  - 10);
   // Pitch controls vertical (y) position (inverted so tilt-up moves bubble up)
-  int y = map(pitch_c, -30, 30, SCREEN_HEIGHT - 10, 10);
+  int y = map(-pitch_c, -30, 30, SCREEN_HEIGHT - 10, 10);
 
   // --- Draw the user interface ---
   display.clearDisplay();                         // Clear the screen each frame
