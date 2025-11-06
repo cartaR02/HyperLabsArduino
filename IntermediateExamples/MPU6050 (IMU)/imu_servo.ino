@@ -12,14 +12,9 @@ void setup() {
   Serial.begin(115200);              // Start serial for debugging (optional)
   Wire.begin();                      // Initialize I2C (A4=SDA, A5=SCL on UNO)
 
-  if (!mpu.begin(0x68)) {            // Try to start the MPU6050 at I2C addr 0x68
-    while (1) {                      // If not found, halt here and print a message
-      Serial.println(F("MPU6050 not found"));
-      delay(1000);
-    }
-  }
+  mpu.begin();  //Initialize MPU6050
 
-  // Optional but helpful sensor config (keeps code basic—no smoothing)
+  // Optional but helpful sensor config
   mpu.setAccelerometerRange(MPU6050_RANGE_4_G); // Set accel ±4g range
   mpu.setFilterBandwidth(MPU6050_BAND_21_HZ);   // Low-pass bandwidth
 
