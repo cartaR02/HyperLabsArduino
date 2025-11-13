@@ -13,6 +13,7 @@ title: Intermediate
 
 - [Intermediate Arduino Slides](https://www.canva.com/design/DAG17KXFD-M/yqGkV18pEtHGUXQAefJ_0Q/view?utm_content=DAG17KXFD-M&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h914717a4b3)
 - [Intermediate #2 Arduino Slides 10/23/2025](https://www.canva.com/design/DAG2k6xpiwE/JN2U8u0aOtUsVZERGWss5A/view?utm_content=DAG2k6xpiwE&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc0ff8eca98)
+- [Intermediate #4 Arduino Slides 11/13/2025](https://www.canva.com/design/DAG2k6xpiwE/JN2U8u0aOtUsVZERGWss5A/view?utm_content=DAG2k6xpiwE&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc0ff8eca98)
 ---
 
 ## Videos and Guides
@@ -29,9 +30,10 @@ The `Examples/` folder contains Arduino sketches demonstrating various component
 |---------------|--------------------------------------------------------------------|---------------------------------------------------------------|----------------------------------------------------------------------|
 | **IR Remote** | Uses infrared light signals to wirelessly transmit data from a handheld remote to a receiver module. Typically used for controlling devices without physical contact. | - Control LEDs remotely<br>- Change servo angle with buttons<br>- Toggle modes (e.g., lights on/off)<br>- Build a simple remote-controlled robot | [Open IR_Remote.ino](https://github.com/cartaR02/HyperLabsArduino/blob/main/IntermediateExamples/IR-Remote/IRRemote.ino) |
 | **Bluetooth** | Uses radio waves (2.4 GHz) to create a short-range wireless connection. Allowing your Arduino to send/receive data wirelessyly from a computer, smartphone, or another Bluetooth module. | - Control Lights with Phone. <br> - Use inputs to control wheels on a robot car | [Open Bluetooth.ino](https://github.com/cartaR02/HyperLabsArduino/blob/main/IntermediateExamples/BLUETOOTH/controlLED.ino) |
-
+| ** RFID ** | Radio Frequency Identification, using radio waves from a reader and a tag can identify any object that contains the tag.  NFC is a short form version of this used in phones and keytags. | - Control a security door with accepted tags - | [Open RFID.ino](https://github.com/cartaR02/HyperLabsArduino/blob/main/IntermediateExamples/RFID/rfid-read-dump.ino) |
 ::: {.callout-note collapse="true"}
 # Arduino Bluetooth Connection Steps
+
 
 ## Instructions
 
@@ -53,6 +55,7 @@ The `Examples/` folder contains Arduino sketches demonstrating various component
 
 * **Power Loss:** If you unplug or remove power from the Bluetooth module, it will disconnect. You will need to re-select the port or (in some cases) re-pair the device to reconnect. Simply having the port open in the Arduino IDE will not work after a power cycle.
 :::
+
 
 Each folder contains a `.ino` sketch file that can be opened directly in the Arduino IDE.
 
