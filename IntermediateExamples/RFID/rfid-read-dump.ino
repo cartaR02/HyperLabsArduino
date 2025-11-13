@@ -35,10 +35,11 @@ void setup()
 
 void loop()
 {
+  
   // Check if a card is present near the RFID reader
   if (rfid.isCard()) {
     Serial.println("Find the card!");  // Notify that a card has been detected
-    
+    String hexcodes = "";
     // If a card is detected, read its serial number
     if (rfid.readCardSerial()) {
       Serial.print("The card's number is: ");
@@ -50,12 +51,22 @@ void loop()
       Serial.print(rfid.serNum[3], HEX);
       Serial.print(rfid.serNum[4], HEX);
       Serial.println(); // Move to the next line
+      for (int i = 0; i < 5; i++) {
+        hexcodes += String(rfid.serNum[i]);
+      }
+      if (hexcodes == "13392474127"){
+        Serial.println("Card accepted");
+      } else {
+        Serial.println("CARD DENIED");
+      }
     }
-
+    
     // Tell the RFID reader to select the detected card (prepares for next read)
     rfid.selectTag(rfid.serNum);
   }
 
   // Put the RFID reader into a low-power idle state until the next card appears
   rfid.halt();
+  
+  
 }
