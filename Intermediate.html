@@ -137,6 +137,11 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#slides" id="toc-slides" class="nav-link" data-scroll-target="#slides"><span class="header-section-number">3.2</span> Slides</a></li>
   <li><a href="#videos-and-guides" id="toc-videos-and-guides" class="nav-link" data-scroll-target="#videos-and-guides"><span class="header-section-number">3.3</span> Videos and Guides</a></li>
   <li><a href="#examples" id="toc-examples" class="nav-link" data-scroll-target="#examples"><span class="header-section-number">3.4</span> Examples</a></li>
+  <li><a href="#arduino-bluetooth-connection-steps" id="toc-arduino-bluetooth-connection-steps" class="nav-link" data-scroll-target="#arduino-bluetooth-connection-steps"><span class="header-section-number">4</span> Arduino Bluetooth Connection Steps</a>
+  <ul class="collapse">
+  <li><a href="#instructions" id="toc-instructions" class="nav-link" data-scroll-target="#instructions"><span class="header-section-number">4.1</span> Instructions</a></li>
+  <li><a href="#important-notes-troubleshooting" id="toc-important-notes-troubleshooting" class="nav-link" data-scroll-target="#important-notes-troubleshooting"><span class="header-section-number">4.2</span> ⚠️ Important Notes &amp; Troubleshooting</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -210,24 +215,15 @@ ul.task-list li input[type="checkbox"] {
 <td><strong>Bluetooth</strong></td>
 <td>Uses radio waves (2.4 GHz) to create a short-range wireless connection. Allowing your Arduino to send/receive data wirelessyly from a computer, smartphone, or another Bluetooth module.</td>
 <td>- Control Lights with Phone. <br> - Use inputs to control wheels on a robot car</td>
-<td><a href="https://github.com/cartaR02/HyperLabsArduino/blob/main/IntermediateExamples/BLUETOOTH/controlLED.ino">Open Bluetooth.ino</a></td>
+<td><a href="https://github.com/cartaR02/HyperLabsArduino/blob/main/IntermediateExamples/BLUETOOTH/controlLED.ino">Open Bluetooth.ino</a> ::: {.callout-note collapse=“true”}</td>
 </tr>
 </tbody>
 </table>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Arduino Bluetooth Connection Steps
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<section id="instructions" class="level2" data-number="3.5">
-<h2 data-number="3.5" class="anchored" data-anchor-id="instructions"><span class="header-section-number">3.5</span> Instructions</h2>
+</section>
+<section id="arduino-bluetooth-connection-steps" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Arduino Bluetooth Connection Steps</h1>
+<section id="instructions" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="instructions"><span class="header-section-number">4.1</span> Instructions</h2>
 <ol type="1">
 <li><p><strong>Upload Code:</strong> First, connect your Arduino via USB. Upload your code to the board using the standard <code>usbmodem</code> port.</p></li>
 <li><p><strong>Pair Bluetooth:</strong> Disconnect the USB cable (if powering separately) or just leave it. On your computer, find the Bluetooth module in your Bluetooth settings and pair with it. When prompted, use the password <code>1234</code>.</p></li>
@@ -241,20 +237,16 @@ Arduino Bluetooth Connection Steps
 </ol>
 <hr>
 </section>
-<section id="important-notes-troubleshooting" class="level2" data-number="3.6">
-<h2 data-number="3.6" class="anchored" data-anchor-id="important-notes-troubleshooting"><span class="header-section-number">3.6</span> ⚠️ Important Notes &amp; Troubleshooting</h2>
+<section id="important-notes-troubleshooting" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="important-notes-troubleshooting"><span class="header-section-number">4.2</span> ⚠️ Important Notes &amp; Troubleshooting</h2>
 <ul>
 <li><p><strong>Do not</strong> just click “Connect” from your computer’s main Bluetooth settings panel after pairing. You <strong>must</strong> select the correct serial port from within the Arduino IDE’s <code>Port</code> menu.</p></li>
-<li><p><strong>Power Loss:</strong> If you unplug or remove power from the Bluetooth module, it will disconnect. You will need to re-select the port or (in some cases) re-pair the device to reconnect. Simply having the port open in the Arduino IDE will not work after a power cycle.</p></li>
+<li><p><strong>Power Loss:</strong> If you unplug or remove power from the Bluetooth module, it will disconnect. You will need to re-select the port or (in some cases) re-pair the device to reconnect. Simply having the port open in the Arduino IDE will not work after a power cycle. ::: | | ** RFID ** | Radio Frequency Identification, using radio waves from a reader and a tag can identify any object that contains the tag. NFC is a short form version of this used in phones and keytags. | - Control a security door with accepted tags - | <a href="https://github.com/cartaR02/HyperLabsArduino/blob/main/IntermediateExamples/RFID/rfid-read-dump.ino">Open RFID.ino</a> |</p></li>
 </ul>
-</section>
-</div>
-</div>
-</div>
-<div class="line-block">** RFID ** | Radio Frequency Identification, using radio waves from a reader and a tag can identify any object that contains the tag. NFC is a short form version of this used in phones and keytags. | - Control a security door with accepted tags - | <a href="https://github.com/cartaR02/HyperLabsArduino/blob/main/IntermediateExamples/RFID/rfid-read-dump.ino">Open RFID.ino</a> |</div>
 <p>Each folder contains a <code>.ino</code> sketch file that can be opened directly in the Arduino IDE.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
