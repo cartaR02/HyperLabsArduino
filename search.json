@@ -2,29 +2,29 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "HyperLabsArduino",
+    "title": "HyperLabs Arduino",
     "section": "",
-    "text": "0.1 Table of Contents\nWelcome to HyperLabs Arduino!\nThis repository supports the HyperLabs Arduino Workshop. It contains example sketches and supporting files to help beginners get started with Arduino components and basic programming.\nTo Access the code for these examples click on the .ino file or access the entire repo here!!!",
+    "text": "What You’ll Learn\nWelcome to HyperLabs Arduino — your hands-on guide to learning Arduino through interactive workshops, example code, and step-by-step resources.\nWhether you’re picking up a microcontroller for the first time or ready to dive into wireless communication and sensors, this site has everything you need to get building.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>HyperLabs Arduino Workshop</span>"
     ]
   },
   {
-    "objectID": "index.html#table-of-contents",
-    "href": "index.html#table-of-contents",
-    "title": "HyperLabsArduino",
+    "objectID": "index.html#what-youll-learn",
+    "href": "index.html#what-youll-learn",
+    "title": "HyperLabs Arduino",
     "section": "",
-    "text": "Overview\n\nRepository Structure\nBeginner\nIntermediate",
+    "text": "Level\nTopics\nComponents\n\n\n\n\nBeginner\nDigital & analog I/O, PWM, serial communication\nLED, potentiometer, buzzer, servo, ultrasonic sensor, OLED, keypad, joystick\n\n\nIntermediate\nWireless protocols, motion tracking, RFID\nIR remote, Bluetooth (HC-05), MPU6050 IMU, RFID reader",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>HyperLabs Arduino Workshop</span>"
     ]
   },
   {
-    "objectID": "index.html#overview",
-    "href": "index.html#overview",
-    "title": "HyperLabsArduino",
-    "section": "0.2 Overview",
-    "text": "0.2 Overview\nThe goal of this workshop/repo is to provide:\n\nHands-on example code to demonstrate how to use Arduino hardware & sensors\n\nA clean starting point for students/new users to learn how to install, configure, and upload sketches\n\nOrganized code and resources so learning is straightforward\n\nGithub Repo",
+    "objectID": "index.html#getting-started",
+    "href": "index.html#getting-started",
+    "title": "HyperLabs Arduino",
+    "section": "Getting Started",
+    "text": "Getting Started\n\nDownload the Arduino IDE from arduino.cc/en/software\nConnect your board (Arduino Uno) via USB\nSelect your board & port in Tools &gt; Board and Tools &gt; Port\nOpen an example from this site and upload it",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>HyperLabs Arduino Workshop</span>"
     ]
@@ -32,9 +32,9 @@
   {
     "objectID": "index.html#repository-structure",
     "href": "index.html#repository-structure",
-    "title": "HyperLabsArduino",
-    "section": "0.3 Repository Structure",
-    "text": "0.3 Repository Structure\n\nExamples/ → Contains Arduino sketches / sample projects\n\nOthers/ → Miscellaneous files or extra resources\n\n.gitattributes → Git config for handling file endings, etc.\n\n.DS_Store → macOS system file (can be ignored)\n\nREADME.md",
+    "title": "HyperLabs Arduino",
+    "section": "Repository Structure",
+    "text": "Repository Structure\n\n\n\n\n\n\n\nFolder\nContents\n\n\n\n\nBeginnerExamples/\nStarter sketches — LED, buzzer, servo, OLED, and more\n\n\nIntermediateExamples/\nAdvanced sketches — Bluetooth, IR, RFID, IMU\n\n\nOthers/\nMiscellaneous examples and extras\n\n\nGames/\nFun interactive projects",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>HyperLabs Arduino Workshop</span>"
     ]
@@ -42,19 +42,9 @@
   {
     "objectID": "Beginner.html",
     "href": "Beginner.html",
-    "title": "2  Beginner Workshop",
+    "title": "Beginner Workshop",
     "section": "",
-    "text": "2.1 Table of Contents",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Beginner Workshop</span>"
-    ]
-  },
-  {
-    "objectID": "Beginner.html#table-of-contents",
-    "href": "Beginner.html#table-of-contents",
-    "title": "2  Beginner Workshop",
-    "section": "",
-    "text": "Slides\n\nVideos and Guides\n\nExamples\nGetting Started",
+    "text": "Slides\nEverything you need to start your Arduino journey — slides, video guides, example code, and setup instructions.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Beginner Workshop</span>"
     ]
@@ -62,9 +52,9 @@
   {
     "objectID": "Beginner.html#slides",
     "href": "Beginner.html#slides",
-    "title": "2  Beginner Workshop",
-    "section": "2.2 Slides",
-    "text": "2.2 Slides\n\nArduino Slides 1 09/18/2025\nArduino Slides 2 09/25/2025\nArduino Slides 3 10/03/2025\nArduino Slides 4 10/09/2025",
+    "title": "Beginner Workshop",
+    "section": "",
+    "text": "Session\nDate\nLink\n\n\n\n\nArduino Slides 1\n09/18/2025\nView Slides\n\n\nArduino Slides 2\n09/25/2025\nView Slides\n\n\nArduino Slides 3\n10/03/2025\nView Slides\n\n\nArduino Slides 4\n10/09/2025\nView Slides",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Beginner Workshop</span>"
     ]
@@ -72,9 +62,9 @@
   {
     "objectID": "Beginner.html#videos-and-guides",
     "href": "Beginner.html#videos-and-guides",
-    "title": "2  Beginner Workshop",
-    "section": "2.3 Videos and Guides",
-    "text": "2.3 Videos and Guides\nHere are some helpful videos and documentation to get started with Arduino:\n\nArduino IDE - Offical Arduino IDE best for programming Arduino\nArduino Language Reference – Official Arduino docs covering all functions, syntax, and examples.\nMark Rober Arduino Tutorial – Fun and practical Arduino introduction by Mark Rober.\n\nWhat is Arduino – Quick overview of Arduino boards and projects.\n\nArduino in 100 Seconds – Concise, beginner-friendly explanation of Arduino basics.",
+    "title": "Beginner Workshop",
+    "section": "Videos and Guides",
+    "text": "Videos and Guides\nHere are some helpful videos and documentation to get started with Arduino:\n\nArduino IDE — Official Arduino IDE, best for programming Arduino\nArduino Language Reference — Official docs covering all functions, syntax, and examples\nMark Rober Arduino Tutorial — Fun and practical Arduino introduction\nWhat is Arduino? — Quick overview of Arduino boards and projects\nArduino in 100 Seconds — Concise, beginner-friendly explanation of Arduino basics",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Beginner Workshop</span>"
     ]
@@ -82,9 +72,9 @@
   {
     "objectID": "Beginner.html#examples",
     "href": "Beginner.html#examples",
-    "title": "2  Beginner Workshop",
-    "section": "2.4 Examples",
-    "text": "2.4 Examples\nThe Examples/ folder contains Arduino sketches demonstrating various components:\n\n\n\nSensor\nWhat it is / What it does\nPossible Projects\nCode\n\n\n\n\nLED\nLight-emitting diode; turns on/off to emit light.\n- Blink LED- Blink with potentiometer- LED patterns\nOpen Blink.ino\n\n\nPotentiometer\nVariable resistor; outputs analog voltage depending on knob position.\n- Read analog value- Control LED brightness- Control servo angle\nOpen Potentiometer.ino\n\n\nPiezo Buzzer\nProduces sound when voltage is applied; can play tones or melodies.\n- Play a tone- Simple melody- Alarm signal\nOpen Buzzer.ino\n\n\nServo Motor\nMotor that moves to a specific angle; controlled by PWM signal.\n- Sweep servo- Control via potentiometer- Interactive project\nOpen Servo.ino\n\n\nUltrasonic Sensor\nMeasures distance by sending sound pulses and measuring echo time.\n- Measure distance- Obstacle detection- Parking aid\nOpen Ultrasonic.ino\n\n\nOLED Display\nSmall screen that shows text/graphics via I2C or SPI.\n- Show text- Display sensor readings- Simple game or graphics\nOpen OLED.ino OLED Commands\n\n\nKeypad\nMatrix of buttons arranged in rows and columns, read by scanning pins.\n- Enter numbers- Create passcode system- Control menus or options\nOpen Keypad.ino\n\n\nJoystick\nAnalog input device with two potentiometers (X and Y axes) and often a push button.\n- Control a cursor- Navigate menus- Control movement in a game or robot\nOpen Joystick.ino\n\n\nCoding\nExplore just a glipse into the vast world of just coding\n- Learn about for loops, functions, variables, if else, return statements and much more!\nOpen Coding.ino\n\n\n\nEach folder contains a .ino sketch file that can be opened directly in the Arduino IDE.",
+    "title": "Beginner Workshop",
+    "section": "Examples",
+    "text": "Examples\n\n\n\nComponent\nWhat It Does\nProject Ideas\nCode\n\n\n\n\nLED\nLight-emitting diode; turns on/off to emit light\nBlink LED, blink with potentiometer, LED patterns\nBlink.ino\n\n\nPotentiometer\nVariable resistor; outputs analog voltage based on knob position\nRead analog value, control LED brightness, control servo angle\nPotentiometer.ino\n\n\nPiezo Buzzer\nProduces sound when voltage is applied; can play tones or melodies\nPlay a tone, simple melody, alarm signal\nBuzzer.ino\n\n\nServo Motor\nMotor that moves to a specific angle; controlled by PWM signal\nSweep servo, control via potentiometer, interactive project\nServo.ino\n\n\nUltrasonic Sensor\nMeasures distance by sending sound pulses and measuring echo time\nMeasure distance, obstacle detection, parking aid\nUltrasonic.ino\n\n\nOLED Display\nSmall screen that shows text/graphics via I2C or SPI\nShow text, display sensor readings, simple graphics\nOLED.ino / OLED Commands\n\n\nKeypad\nMatrix of buttons in rows and columns, read by scanning pins\nEnter numbers, passcode system, control menus\nKeypad.ino\n\n\nJoystick\nAnalog input with two axes (X/Y) and a push button\nControl a cursor, navigate menus, game/robot control\nJoystick.ino\n\n\nCoding Basics\nExplore the fundamentals of Arduino programming\nLoops, functions, variables, conditionals, and more\nbasics.ino\n\n\n\nEach folder contains a .ino sketch file that can be opened directly in the Arduino IDE.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Beginner Workshop</span>"
     ]
@@ -92,9 +82,9 @@
   {
     "objectID": "Beginner.html#getting-started",
     "href": "Beginner.html#getting-started",
-    "title": "2  Beginner Workshop",
-    "section": "2.5 Getting Started",
-    "text": "2.5 Getting Started\nTo use this repo:\n\nInstall Arduino IDE\nIf you haven’t already: download and install the Arduino IDE for your operating system.\nSet up your Arduino board\n\nConnect your board (e.g., Arduino Uno) to your computer via USB.\n\nOpen Arduino IDE → go to Tools → Board → select your board model.\n\nGo to Tools → Port → select the correct serial/USB port.",
+    "title": "Beginner Workshop",
+    "section": "Getting Started",
+    "text": "Getting Started\n\n1. Install Arduino IDE\nDownload and install the Arduino IDE for your operating system.\n\n\n2. Set Up Your Board\n\nConnect your board (e.g., Arduino Uno) to your computer via USB\nOpen Arduino IDE and go to Tools &gt; Board — select your board model\nGo to Tools &gt; Port — select the correct serial/USB port\n\n\n\n3. Upload Your First Sketch\n\nOpen one of the example .ino files from this site\nClick the Upload button (right arrow) in the Arduino IDE\nWatch the onboard LED or connected component respond",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Beginner Workshop</span>"
     ]
@@ -102,71 +92,51 @@
   {
     "objectID": "Intermediate.html",
     "href": "Intermediate.html",
-    "title": "3  Intermediate",
+    "title": "Intermediate Workshop",
     "section": "",
-    "text": "3.1 Table of Contents",
+    "text": "Slides\nReady to go beyond the basics? This section covers wireless communication, motion sensing, and RFID — the building blocks for smarter, more interactive projects.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Intermediate</span>"
-    ]
-  },
-  {
-    "objectID": "Intermediate.html#table-of-contents",
-    "href": "Intermediate.html#table-of-contents",
-    "title": "3  Intermediate",
-    "section": "",
-    "text": "Slides\n\nVideos and Guides\n\nExamples",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Intermediate</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Intermediate Workshop</span>"
     ]
   },
   {
     "objectID": "Intermediate.html#slides",
     "href": "Intermediate.html#slides",
-    "title": "3  Intermediate",
-    "section": "3.2 Slides",
-    "text": "3.2 Slides\n\nIntermediate Arduino Slides\nIntermediate #2 Arduino Slides 10/23/2025\nIntermediate #4 Arduino Slides 11/13/2025",
+    "title": "Intermediate Workshop",
+    "section": "",
+    "text": "Session\nDate\nLink\n\n\n\n\nIntermediate Slides 1\n—\nView Slides\n\n\nIntermediate Slides 2\n10/23/2025\nView Slides\n\n\nIntermediate Slides 4\n11/13/2025\nView Slides",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Intermediate</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Intermediate Workshop</span>"
     ]
   },
   {
     "objectID": "Intermediate.html#videos-and-guides",
     "href": "Intermediate.html#videos-and-guides",
-    "title": "3  Intermediate",
-    "section": "3.3 Videos and Guides",
-    "text": "3.3 Videos and Guides\nIn the works",
+    "title": "Intermediate Workshop",
+    "section": "Videos and Guides",
+    "text": "Videos and Guides\nComing soon — stay tuned for video walkthroughs and documentation for intermediate topics.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Intermediate</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Intermediate Workshop</span>"
     ]
   },
   {
     "objectID": "Intermediate.html#examples",
     "href": "Intermediate.html#examples",
-    "title": "3  Intermediate",
-    "section": "3.4 Examples",
-    "text": "3.4 Examples\nThe Examples/ folder contains Arduino sketches demonstrating various components:\n\n\n\nSensor\nWhat it is / What it does\nPossible Projects\nCode\n\n\n\n\nIR Remote\nUses infrared light signals to wirelessly transmit data from a handheld remote to a receiver module. Typically used for controlling devices without physical contact.\n- Control LEDs remotely- Change servo angle with buttons- Toggle modes (e.g., lights on/off)- Build a simple remote-controlled robot\nOpen IR_Remote.ino\n\n\nBluetooth\nUses radio waves (2.4 GHz) to create a short-range wireless connection. Allowing your Arduino to send/receive data wirelessyly from a computer, smartphone, or another Bluetooth module.\n- Control Lights with Phone.  - Use inputs to control wheels on a robot car\nOpen Bluetooth.ino\n\n\n** RFID **\nRadio Frequency Identification, using radio waves from a reader and a tag can identify any object that contains the tag. NFC is a short form version of this used in phones and keytags.\n- Control a security door with accepted tags -\nOpen RFID.ino\n\n\n\n\n\n\n\n\n\nArduino Bluetooth Connection Steps\n\n\n\n\n\n\n3.5 Instructions\n\nUpload Code: First, connect your Arduino via USB. Upload your code to the board using the standard usbmodem port.\nPair Bluetooth: Disconnect the USB cable (if powering separately) or just leave it. On your computer, find the Bluetooth module in your Bluetooth settings and pair with it. When prompted, use the password 1234.\nConnect in Software:\n\nOnce your computer confirms the device is paired, go back to the Arduino IDE (or your serial monitor software).\nGo to the Tools &gt; Port menu.\nCrucially: Select the new Bluetooth port (it will have a different name, often containing “Bluetooth” or “HC-05”). Do not select the old usbmodem port.\nOpen the Serial Monitor. It should now be connected wirelessly.\n\n\n\n\n\n3.6 ⚠️ Important Notes & Troubleshooting\n\nDo not just click “Connect” from your computer’s main Bluetooth settings panel after pairing. You must select the correct serial port from within the Arduino IDE’s Port menu.\nPower Loss: If you unplug or remove power from the Bluetooth module, it will disconnect. You will need to re-select the port or (in some cases) re-pair the device to reconnect. Simply having the port open in the Arduino IDE will not work after a power cycle.\n\n\n\n\n\nEach folder contains a .ino sketch file that can be opened directly in the Arduino IDE.",
+    "title": "Intermediate Workshop",
+    "section": "Examples",
+    "text": "Examples\n\n\n\nComponent\nWhat It Does\nProject Ideas\nCode\n\n\n\n\nIR Remote\nUses infrared light signals to wirelessly transmit data from a handheld remote to a receiver module\nControl LEDs remotely, change servo angle with buttons, toggle modes, build a remote-controlled robot\nIRRemote.ino\n\n\nBluetooth\nUses radio waves (2.4 GHz) to create a short-range wireless connection, allowing your Arduino to send/receive data from a phone or computer\nControl lights with your phone, use inputs to drive a robot car\ncontrolLED.ino\n\n\nRFID\nRadio Frequency Identification — uses radio waves from a reader to identify objects with embedded tags. NFC is a short-range version used in phones and key fobs\nSecurity door with accepted tags, access control systems\nrfid-read-dump.ino\n\n\n\nEach folder contains a .ino sketch file that can be opened directly in the Arduino IDE.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Intermediate</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Intermediate Workshop</span>"
     ]
   },
   {
-    "objectID": "Intermediate.html#instructions",
-    "href": "Intermediate.html#instructions",
-    "title": "3  Intermediate",
-    "section": "3.5 Instructions",
-    "text": "3.5 Instructions\n\nUpload Code: First, connect your Arduino via USB. Upload your code to the board using the standard usbmodem port.\nPair Bluetooth: Disconnect the USB cable (if powering separately) or just leave it. On your computer, find the Bluetooth module in your Bluetooth settings and pair with it. When prompted, use the password 1234.\nConnect in Software:\n\nOnce your computer confirms the device is paired, go back to the Arduino IDE (or your serial monitor software).\nGo to the Tools &gt; Port menu.\nCrucially: Select the new Bluetooth port (it will have a different name, often containing “Bluetooth” or “HC-05”). Do not select the old usbmodem port.\nOpen the Serial Monitor. It should now be connected wirelessly.",
+    "objectID": "Intermediate.html#bluetooth-connection-guide",
+    "href": "Intermediate.html#bluetooth-connection-guide",
+    "title": "Intermediate Workshop",
+    "section": "Bluetooth Connection Guide",
+    "text": "Bluetooth Connection Guide\n\n\n\n\n\n\nStep-by-Step: Arduino Bluetooth Connection\n\n\n\n\n\n\nInstructions\n\nUpload Code: Connect your Arduino via USB. Upload your code using the standard usbmodem port.\nPair Bluetooth: On your computer, find the Bluetooth module in your Bluetooth settings and pair with it. When prompted, use the password 1234.\nConnect in Software:\n\nOnce paired, go back to the Arduino IDE (or your serial monitor software)\nGo to Tools &gt; Port\nSelect the new Bluetooth port (it will have a different name, often containing “Bluetooth” or “HC-05”). Do not select the old usbmodem port\nOpen the Serial Monitor — it should now be connected wirelessly\n\n\n\n\nTroubleshooting\n\nDo not just click “Connect” from your computer’s Bluetooth settings after pairing. You must select the correct serial port from within Tools &gt; Port in the Arduino IDE.\nPower loss: If you unplug or remove power from the Bluetooth module, it will disconnect. You may need to re-select the port or re-pair the device to reconnect.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Intermediate</span>"
-    ]
-  },
-  {
-    "objectID": "Intermediate.html#important-notes-troubleshooting",
-    "href": "Intermediate.html#important-notes-troubleshooting",
-    "title": "3  Intermediate",
-    "section": "3.6 ⚠️ Important Notes & Troubleshooting",
-    "text": "3.6 ⚠️ Important Notes & Troubleshooting\n\nDo not just click “Connect” from your computer’s main Bluetooth settings panel after pairing. You must select the correct serial port from within the Arduino IDE’s Port menu.\nPower Loss: If you unplug or remove power from the Bluetooth module, it will disconnect. You will need to re-select the port or (in some cases) re-pair the device to reconnect. Simply having the port open in the Arduino IDE will not work after a power cycle.",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Intermediate</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Intermediate Workshop</span>"
     ]
   }
 ]
