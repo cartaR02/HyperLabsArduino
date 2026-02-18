@@ -1,61 +1,34 @@
 ---
-title: Intermediate
+title: "Intermediate Workshop"
 ---
 
-## Table of Contents
+Ready to go beyond the basics? This section covers motion sensing, wireless control, and RFID — the building blocks for smarter, more interactive projects.
 
-- [Slides](#Slides)  
-- [Videos and Guides](#Videos-and-Guides)  
-- [Examples](#Examples)
 ---
 
 ## Slides
 
-- [Intermediate Arduino Slides](https://www.canva.com/design/DAG17KXFD-M/yqGkV18pEtHGUXQAefJ_0Q/view?utm_content=DAG17KXFD-M&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h914717a4b3)
-- [Intermediate #2 Arduino Slides 10/23/2025](https://www.canva.com/design/DAG2k6xpiwE/JN2U8u0aOtUsVZERGWss5A/view?utm_content=DAG2k6xpiwE&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc0ff8eca98)
-- [Intermediate #4 Arduino Slides 11/13/2025](https://www.canva.com/design/DAG2k6xpiwE/JN2U8u0aOtUsVZERGWss5A/view?utm_content=DAG2k6xpiwE&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc0ff8eca98)
+| Session | Date | Link |
+|---------|------|------|
+| Intermediate Slides 1 | — | [View Slides](https://www.canva.com/design/DAG17KXFD-M/yqGkV18pEtHGUXQAefJ_0Q/view?utm_content=DAG17KXFD-M&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h914717a4b3) |
+| Intermediate Slides 2 | 10/23/2025 | [View Slides](https://www.canva.com/design/DAG2k6xpiwE/JN2U8u0aOtUsVZERGWss5A/view?utm_content=DAG2k6xpiwE&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc0ff8eca98) |
+| Intermediate Slides 4 | 11/13/2025 | [View Slides](https://www.canva.com/design/DAG2k6xpiwE/JN2U8u0aOtUsVZERGWss5A/view?utm_content=DAG2k6xpiwE&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc0ff8eca98) |
+
 ---
 
 ## Videos and Guides
 
-In the works
+*Coming soon — stay tuned for video walkthroughs and documentation for intermediate topics.*
 
 ---
 
 ## Examples
 
-The `Examples/` folder contains Arduino sketches demonstrating various components:
-
-| Sensor        | What it is / What it does                                          | Possible Projects                                             | Code                                                                 |
-|---------------|--------------------------------------------------------------------|---------------------------------------------------------------|----------------------------------------------------------------------|
-| **IR Remote** | Uses infrared light signals to wirelessly transmit data from a handheld remote to a receiver module. Typically used for controlling devices without physical contact. | - Control LEDs remotely<br>- Change servo angle with buttons<br>- Toggle modes (e.g., lights on/off)<br>- Build a simple remote-controlled robot | [Open IR_Remote.ino](https://github.com/cartaR02/HyperLabsArduino/blob/main/IntermediateExamples/IR-Remote/IRRemote.ino) |
-| **Bluetooth** | Uses radio waves (2.4 GHz) to create a short-range wireless connection. Allowing your Arduino to send/receive data wirelessyly from a computer, smartphone, or another Bluetooth module. | - Control Lights with Phone. <br> - Use inputs to control wheels on a robot car | [Open Bluetooth.ino](https://github.com/cartaR02/HyperLabsArduino/blob/main/IntermediateExamples/BLUETOOTH/controlLED.ino) |
-| ** RFID ** | Radio Frequency Identification, using radio waves from a reader and a tag can identify any object that contains the tag.  NFC is a short form version of this used in phones and keytags. | - Control a security door with accepted tags - | [Open RFID.ino](https://github.com/cartaR02/HyperLabsArduino/blob/main/IntermediateExamples/RFID/rfid-read-dump.ino) |
-::: {.callout-note collapse="true"}
-# Arduino Bluetooth Connection Steps
-
-
-## Instructions
-
-1.  **Upload Code:** First, connect your Arduino via USB. Upload your code to the board using the standard `usbmodem` port.
-
-2.  **Pair Bluetooth:** Disconnect the USB cable (if powering separately) or just leave it. On your computer, find the Bluetooth module in your Bluetooth settings and pair with it. When prompted, use the password `1234`.
-
-3.  **Connect in Software:**
-    * Once your computer confirms the device is paired, go back to the Arduino IDE (or your serial monitor software).
-    * Go to the **Tools > Port** menu.
-    * **Crucially:** Select the *new* Bluetooth port (it will have a different name, often containing "Bluetooth" or "HC-05"). **Do not** select the old `usbmodem` port.
-    * Open the Serial Monitor. It should now be connected wirelessly.
-
----
-
-## ⚠️ Important Notes & Troubleshooting
-
-* **Do not** just click "Connect" from your computer's main Bluetooth settings panel after pairing. You **must** select the correct serial port from within the Arduino IDE's `Port` menu.
-
-* **Power Loss:** If you unplug or remove power from the Bluetooth module, it will disconnect. You will need to re-select the port or (in some cases) re-pair the device to reconnect. Simply having the port open in the Arduino IDE will not work after a power cycle.
-:::
-
+| Component | What It Does | Project Ideas | Code |
+|-----------|-------------|---------------|------|
+| **Accelerometer (MPU6050)** | 6-axis IMU that measures acceleration and rotation on X, Y, Z axes | Bubble level, motion-controlled servo, real-time data plotter | [bubble_level.ino](https://github.com/cartaR02/HyperLabsArduino/blob/main/IntermediateExamples/MPU6050/bubble_level.ino) |
+| **IR Remote** | Uses infrared light signals to wirelessly transmit data from a handheld remote to a receiver module | Control LEDs remotely, change servo angle with buttons, toggle modes, build a remote-controlled robot | [IRRemote.ino](https://github.com/cartaR02/HyperLabsArduino/blob/main/IntermediateExamples/IR-Remote/IRRemote.ino) |
+| **RFID** | Radio Frequency Identification — uses radio waves from a reader to identify objects with embedded tags. NFC is a short-range version used in phones and key fobs | Security door with accepted tags, access control systems | [rfid-read-dump.ino](https://github.com/cartaR02/HyperLabsArduino/blob/main/IntermediateExamples/RFID/rfid-read-dump.ino) |
+| **Keypad** | Matrix of buttons in rows and columns, read by scanning pins | Enter numbers, passcode system, control menus | [Keypad.ino](https://github.com/cartaR02/HyperLabsArduino/blob/main/BeginnerExamples/Keypad/Keypad.ino) |
 
 Each folder contains a `.ino` sketch file that can be opened directly in the Arduino IDE.
-

@@ -1,44 +1,61 @@
 ---
 title: "HyperLabs Arduino Workshop"
-format: html
 ---
 
-Welcome to **HyperLabs Arduino**!  
-This repository supports the HyperLabs Arduino Workshop. It contains example sketches and supporting files to help beginners get started with Arduino components and basic programming.
+Welcome to **HyperLabs Arduino** — your hands-on guide to learning Arduino through interactive workshops, example code, and step-by-step resources.
 
-To Access the code for these examples click on the .ino file or access the entire repo [here!!!](https://github.com/cartaR02/HyperLabsArduino)
+Whether you're picking up a microcontroller for the first time or ready to dive into wireless communication and sensors, this site has everything you need to get building.
+
+::: {.card-grid}
+
+::: {.feature-card}
+### Beginner Workshop
+Start from scratch with LEDs, buzzers, servos, and sensors. Perfect for your first Arduino project.
+
+[Get Started](Beginner.qmd){.btn-gold}
+:::
+
+::: {.feature-card}
+### Intermediate Workshop
+Level up with Bluetooth, IR remotes, RFID, and motion sensors. Build smarter, wireless projects.
+
+[Explore](Intermediate.qmd){.btn-gold}
+:::
+
+::: {.feature-card}
+### Full Source Code
+Browse all example sketches and resources on GitHub. Clone, fork, or download everything.
+
+[View on GitHub](https://github.com/cartaR02/HyperLabsArduino){.btn-gold}
+:::
+
+:::
 
 ---
 
-## Table of Contents
+## What You'll Learn
 
-- [Overview](#overview)  
-- [Repository Structure](#repository-structure)  
-
-- [Beginner](Beginner.qmd)
-- [Intermediate](Intermediate.qmd)
-
+| Level | Topics | Components |
+|-------|--------|------------|
+| **Beginner** | Digital & analog I/O, PWM, serial communication | LED, potentiometer, buzzer, servo, ultrasonic sensor, OLED, keypad, joystick |
+| **Intermediate** | Wireless protocols, motion tracking, RFID | IR remote, Bluetooth (HC-05), MPU6050 IMU, RFID reader |
 
 ---
 
-## Overview
+## Getting Started
 
-The goal of this workshop/repo is to provide:
-
-- Hands-on example code to demonstrate how to use Arduino hardware & sensors  
-- A clean starting point for students/new users to learn how to install, configure, and upload sketches  
-- Organized code and resources so learning is straightforward  
-- [Github Repo](https://github.com/cartaR02/HyperLabsArduino)
+1. **Download the Arduino IDE** from [arduino.cc/en/software](https://www.arduino.cc/en/software)
+2. **Connect your board** (Arduino Uno) via USB
+3. **Select your board & port** in *Tools > Board* and *Tools > Port*
+4. **Open an example** from this site and upload it
 
 ---
 
 ## Repository Structure
 
-- **Examples/** → Contains Arduino sketches / sample projects  
-- **Others/** → Miscellaneous files or extra resources  
-- **.gitattributes** → Git config for handling file endings, etc.  
-- **.DS_Store** → macOS system file (can be ignored)  
-- **README.md** 
-
----
-
+| Folder | Contents |
+|--------|----------|
+| `BeginnerExamples/` | Starter sketches — LED, buzzer, servo, OLED, and more |
+| `IntermediateExamples/` | Advanced sketches — Bluetooth, IR, RFID, IMU |
+| `Others/` | Miscellaneous examples and extras |
+| `Games/` | Fun interactive projects |

@@ -1,68 +1,104 @@
 ---
-title: Beginner Workshop
+title: "Beginner Workshop"
 ---
 
+Everything you need to start your Arduino journey — slides, video guides, example code, and setup instructions.
 
----
-
-## Table of Contents
-
-- [Slides](#Slides)  
-- [Videos and Guides](#Videos-and-Guides)  
-- [Examples](#Examples)
-- [Getting Started](#Getting-Started)
 ---
 
 ## Slides
 
-- [Arduino Slides 1 09/18/2025](https://www.canva.com/design/DAGzPY7RSnw/Yf6TqiRTzH-27oPtMXnemw/view?utm_content=DAGzPY7RSnw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h0fe4a98ba1)
-- [Arduino Slides 2 09/25/2025](https://www.canva.com/design/DAGzumVJqws/vyPjJFnlcgFLvQ63QIr2jw/view?utm_content=DAGzumVJqws&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h763df9ae66)
-- [Arduino Slides 3 10/03/2025](https://www.canva.com/design/DAG0pMDub3I/zBHqySFu2HVA4R4GTNpi_g/view?utm_content=DAG0pMDub3I&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hbedb9b78f4)
-- [Arduino Slides 4 10/09/2025](https://www.canva.com/design/DAG1PrvQauc/gbSY0MZsyuf4VofSwlRmKw/view?utm_content=DAG1PrvQauc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hf87150b889)
+::: {.callout-note collapse="true"}
+## Spring 2026
+
+| Session | Date | Link |
+|---------|------|------|
+| Arduino Slides 1 | 02/18/2026 | [View Slides](https://www.canva.com/design/DAHA9uXrQPM/yWskFhQxikS5aUzebtrI_Q/view?utm_content=DAHA9uXrQPM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hf522778781) |
+:::
+
+::: {.callout-note collapse="true"}
+## Fall 2025
+
+| Session | Date | Link |
+|---------|------|------|
+| Arduino Slides 1 | 09/18/2025 | [View Slides](https://www.canva.com/design/DAGzPY7RSnw/Yf6TqiRTzH-27oPtMXnemw/view?utm_content=DAGzPY7RSnw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h0fe4a98ba1) |
+| Arduino Slides 2 | 09/25/2025 | [View Slides](https://www.canva.com/design/DAGzumVJqws/vyPjJFnlcgFLvQ63QIr2jw/view?utm_content=DAGzumVJqws&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h763df9ae66) |
+| Arduino Slides 3 | 10/03/2025 | [View Slides](https://www.canva.com/design/DAG0pMDub3I/zBHqySFu2HVA4R4GTNpi_g/view?utm_content=DAG0pMDub3I&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hbedb9b78f4) |
+| Arduino Slides 4 | 10/09/2025 | [View Slides](https://www.canva.com/design/DAG1PrvQauc/gbSY0MZsyuf4VofSwlRmKw/view?utm_content=DAG1PrvQauc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hf87150b889) |
+:::
+
 ---
 
 ## Videos and Guides
 
 Here are some helpful videos and documentation to get started with Arduino:
 
-- **[Arduino IDE](https://www.arduino.cc/en/software/)** - Offical Arduino IDE best for programming Arduino
-- **[Arduino Language Reference](https://docs.arduino.cc/language-reference)** – Official Arduino docs covering all functions, syntax, and examples.
-- **[Mark Rober Arduino Tutorial](https://www.youtube.com/watch?v=yi29dbPnu28)** – Fun and practical Arduino introduction by Mark Rober.  
-- **[What is Arduino](https://www.youtube.com/watch?v=tiGw9PQbvrg&t=402s)** – Quick overview of Arduino boards and projects.  
-- **[Arduino in 100 Seconds](https://www.youtube.com/watch?v=1ENiVwk8idM)** – Concise, beginner-friendly explanation of Arduino basics.
-
+- [Arduino IDE](https://www.arduino.cc/en/software/) — Official Arduino IDE, best for programming Arduino
+- [Arduino Language Reference](https://docs.arduino.cc/language-reference) — Official docs covering all functions, syntax, and examples
+- [Mark Rober Arduino Tutorial](https://www.youtube.com/watch?v=yi29dbPnu28) — Fun and practical Arduino introduction
+- [What is Arduino?](https://www.youtube.com/watch?v=tiGw9PQbvrg&t=402s) — Quick overview of Arduino boards and projects
+- [Arduino in 100 Seconds](https://www.youtube.com/watch?v=1ENiVwk8idM) — Concise, beginner-friendly explanation of Arduino basics
 
 ---
 
 ## Examples
 
-The `Examples/` folder contains Arduino sketches demonstrating various components:
-
-| Sensor        | What it is / What it does                                          | Possible Projects                                             | Code                                                                 |
-|---------------|--------------------------------------------------------------------|---------------------------------------------------------------|----------------------------------------------------------------------|
-| **LED**       | Light-emitting diode; turns on/off to emit light.                  | - Blink LED<br>- Blink with potentiometer<br>- LED patterns    | [Open Blink.ino](https://github.com/cartaR02/HyperLabsArduino/blob/main/BeginnerExamples/Blink/Blink.ino) |
-| **Potentiometer** | Variable resistor; outputs analog voltage depending on knob position. | - Read analog value<br>- Control LED brightness<br>- Control servo angle | [Open Potentiometer.ino](https://github.com/cartaR02/HyperLabsArduino/blob/main/BeginnerExamples/Potentiometer/Potentiometer.ino) |
-| **Piezo Buzzer** | Produces sound when voltage is applied; can play tones or melodies. | - Play a tone<br>- Simple melody<br>- Alarm signal            | [Open Buzzer.ino](https://github.com/cartaR02/HyperLabsArduino/blob/main/BeginnerExamples/Buzzer/Buzzer.ino) |
-| **Servo Motor** | Motor that moves to a specific angle; controlled by PWM signal.    | - Sweep servo<br>- Control via potentiometer<br>- Interactive project | [Open Servo.ino](https://github.com/cartaR02/HyperLabsArduino/blob/main/BeginnerExamples/Servo/Servo.ino) |
-| **Ultrasonic Sensor** | Measures distance by sending sound pulses and measuring echo time. | - Measure distance<br>- Obstacle detection<br>- Parking aid   | [Open Ultrasonic.ino](https://github.com/cartaR02/HyperLabsArduino/blob/main/BeginnerExamples/Ultrasonic/simpleUltrasonic/simpleUltrasonic.ino) |
-| **OLED Display** | Small screen that shows text/graphics via I2C or SPI.              | - Show text<br>- Display sensor readings<br>- Simple game or graphics | [Open OLED.ino](https://github.com/cartaR02/HyperLabsArduino/blob/main/BeginnerExamples/Oled/SIMPLE_OLED/SIMPLE_OLED.ino) [OLED Commands](https://github.com/cartaR02/HyperLabsArduino/blob/main/BeginnerExamples/Oled/commands.txt) |
-| **Keypad** | Matrix of buttons arranged in rows and columns, read by scanning pins. | - Enter numbers<br>- Create passcode system<br>- Control menus or options | [Open Keypad.ino](https://github.com/cartaR02/HyperLabsArduino/blob/main/BeginnerExamples/Keypad/Keypad.ino) |
-| **Joystick** | Analog input device with two potentiometers (X and Y axes) and often a push button. | - Control a cursor<br>- Navigate menus<br>- Control movement in a game or robot | [Open Joystick.ino](https://github.com/cartaR02/HyperLabsArduino/blob/main/BeginnerExamples/Joystick/TiltPanServoJoystick.ino) |
-| **Coding** | Explore just a glipse into the vast world of just coding | - Learn about for loops, functions, variables, if else, return statements and much more! | [Open Coding.ino](https://github.com/cartaR02/HyperLabsArduino/blob/main/BeginnerExamples/Coding/basics.ino) |
-
+| Component | What It Does | Project Ideas | Code |
+|-----------|-------------|---------------|------|
+| **LED** | Light-emitting diode; turns on/off to emit light | Blink LED, blink with potentiometer, LED patterns | [Blink.ino](https://github.com/cartaR02/HyperLabsArduino/blob/main/BeginnerExamples/Blink/Blink.ino) |
+| **Potentiometer** | Variable resistor; outputs analog voltage based on knob position | Read analog value, control LED brightness, control servo angle | [Potentiometer.ino](https://github.com/cartaR02/HyperLabsArduino/blob/main/BeginnerExamples/Potentiometer/Potentiometer.ino) |
+| **Servo Motor** | Motor that moves to a specific angle; controlled by PWM signal | Sweep servo, control via potentiometer, interactive project | [Servo.ino](https://github.com/cartaR02/HyperLabsArduino/blob/main/BeginnerExamples/Servo/Servo.ino) |
+| **Piezo Buzzer** | Produces sound when voltage is applied; can play tones or melodies | Play a tone, simple melody, alarm signal | [Buzzer.ino](https://github.com/cartaR02/HyperLabsArduino/blob/main/BeginnerExamples/Buzzer/Buzzer.ino) |
+| **Coding Basics** | Explore the fundamentals of Arduino programming | Loops, functions, variables, conditionals, and more | [basics.ino](https://github.com/cartaR02/HyperLabsArduino/blob/main/BeginnerExamples/Coding/basics.ino) |
+| **OLED Display** | Small screen that shows text/graphics via I2C or SPI | Show text, display sensor readings, simple graphics | [OLED.ino](https://github.com/cartaR02/HyperLabsArduino/blob/main/BeginnerExamples/Oled/SIMPLE_OLED/SIMPLE_OLED.ino) / [OLED Commands](https://github.com/cartaR02/HyperLabsArduino/blob/main/BeginnerExamples/Oled/commands.txt) |
+| **Ultrasonic Sensor** | Measures distance by sending sound pulses and measuring echo time | Measure distance, obstacle detection, parking aid | [Ultrasonic.ino](https://github.com/cartaR02/HyperLabsArduino/blob/main/BeginnerExamples/Ultrasonic/simpleUltrasonic/simpleUltrasonic.ino) |
+| **Bluetooth** | Uses radio waves (2.4 GHz) to create a short-range wireless connection, allowing your Arduino to send/receive data from a phone or computer | Control lights with your phone, use inputs to drive a robot car | [controlLED.ino](https://github.com/cartaR02/HyperLabsArduino/blob/main/IntermediateExamples/Bluetooth/controlLED.ino) |
+| **Joystick** | Analog input with two axes (X/Y) and a push button | Control a cursor, navigate menus, game/robot control | [Joystick.ino](https://github.com/cartaR02/HyperLabsArduino/blob/main/BeginnerExamples/Joystick/TiltPanServoJoystick.ino) |
+| **Temp Sensor** | Measures ambient temperature and outputs an analog or digital signal | Display temperature on serial monitor, trigger fan/LED at threshold, weather station | [TempSensor.ino](https://github.com/cartaR02/HyperLabsArduino/blob/main/BeginnerExamples/TempSensor/TempSensor.ino) |
 
 Each folder contains a `.ino` sketch file that can be opened directly in the Arduino IDE.
 
 ---
 
+## Bluetooth Connection Guide
+
+::: {.callout-note collapse="true"}
+## Step-by-Step: Arduino Bluetooth Connection
+
+### Instructions
+
+1. **Upload Code:** Connect your Arduino via USB. Upload your code using the standard `usbmodem` port.
+
+2. **Pair Bluetooth:** On your computer, find the Bluetooth module in your Bluetooth settings and pair with it. When prompted, use the password `1234`.
+
+3. **Connect in Software:**
+   - Once paired, go back to the Arduino IDE (or your serial monitor software)
+   - Go to **Tools > Port**
+   - Select the *new* Bluetooth port (it will have a different name, often containing "Bluetooth" or "HC-05"). **Do not** select the old `usbmodem` port
+   - Open the Serial Monitor — it should now be connected wirelessly
+
+### Troubleshooting
+
+- **Do not** just click "Connect" from your computer's Bluetooth settings after pairing. You **must** select the correct serial port from within **Tools > Port** in the Arduino IDE.
+- **Power loss:** If you unplug or remove power from the Bluetooth module, it will disconnect. You may need to re-select the port or re-pair the device to reconnect.
+:::
+
+---
+
 ## Getting Started
 
-To use this repo:
+### 1. Install Arduino IDE
 
-1. **Install Arduino IDE**  
-   If you haven’t already: download and install the [Arduino IDE](https://www.arduino.cc/en/software) for your operating system.
+Download and install the [Arduino IDE](https://www.arduino.cc/en/software) for your operating system.
 
-2. **Set up your Arduino board**  
-   - Connect your board (e.g., Arduino Uno) to your computer via USB.  
-   - Open Arduino IDE → go to **Tools → Board** → select your board model.  
-   - Go to **Tools → Port** → select the correct serial/USB port.
+### 2. Set Up Your Board
+
+1. Connect your board (e.g., Arduino Uno) to your computer via USB
+2. Open Arduino IDE and go to **Tools > Board** — select your board model
+3. Go to **Tools > Port** — select the correct serial/USB port
+
+### 3. Upload Your First Sketch
+
+1. Open one of the example `.ino` files from this site
+2. Click the **Upload** button (right arrow) in the Arduino IDE
+3. Watch the onboard LED or connected component respond

@@ -1,85 +1,113 @@
-Welcome to **HyperLabs Arduino**!  
-This repository supports the HyperLabs Arduino Workshop. It contains example sketches and supporting files to help beginners get started with Arduino components and basic programming.
+# HyperLabs Arduino
 
----
-To publish to github use:
-quarto publish gh-pages
-## Table of Contents
+Workshop resources and example code for the HyperLabs Arduino Workshop. Built with [Quarto](https://quarto.org) and published to GitHub Pages.
 
-- [Overview](#overview)
-- [Repository Structure](#repository-structure)
-- [Getting Started](#getting-started)
-- [Examples](#examples)
-- [Slides](#slides)
-- [Videos and Guides](#Videos-and-guides)
+**Live Site:** [https://cartaR02.github.io/HyperLabsArduino/](https://cartaR02.github.io/HyperLabsArduino/)
 
 ---
 
 ## Overview
 
-The goal of this workshop/repo is to provide:
+This repo provides:
 
-- Hands-on example code to demonstrate how to use Arduino hardware & sensors
-- A clean starting point for students/new users to learn how to install, configure, and upload sketches
-- Organized code and resources so learning is straightforward
-- [Github Repo](https://github.com/cartaR02/HyperLabsArduino)
+- Hands-on Arduino example sketches for beginner and intermediate learners
+- Organized workshop slides and video resources
+- A Quarto-powered site to browse everything in one place
 
 ---
 
 ## Repository Structure
 
-- **Examples/** → Contains Arduino sketches / sample projects
-- **Others/** → Miscellaneous files or extra resources
-- **.gitattributes** → Git config for handling file endings, etc.
-- **.DS_Store** → macOS system file (can be ignored)
-- **README.md**
-
----
-
-## Slides
-
-- [Arduino Slides 1 09/18/2025](https://www.canva.com/design/DAGzPY7RSnw/Yf6TqiRTzH-27oPtMXnemw/view?utm_content=DAGzPY7RSnw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h0fe4a98ba1)
-
----
-
-## Videos and Guides
-
-Here are some helpful videos and documentation to get started with Arduino:
-
-- **[Arduino IDE](https://www.arduino.cc/en/software/)** - Offical Arduino IDE best for programming Arduino
-- **[Arduino Language Reference](https://docs.arduino.cc/language-reference)** – Official Arduino docs covering all functions, syntax, and examples.
-- **[Mark Rober Arduino Tutorial](https://www.youtube.com/watch?v=yi29dbPnu28)** – Fun and practical Arduino introduction by Mark Rober.
-- **[What is Arduino](https://www.youtube.com/watch?v=tiGw9PQbvrg&t=402s)** – Quick overview of Arduino boards and projects.
-- **[Arduino in 100 Seconds](https://www.youtube.com/watch?v=1ENiVwk8idM)** – Concise, beginner-friendly explanation of Arduino basics.
-
----
-
-## Examples
-
-The `Examples/` folder contains Arduino sketches demonstrating various components:
-
-| Sensor                | What it is / What it does                                                                       | Possible Projects                                                        | Code                                                                                                                                    |
-| --------------------- | ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------- |
-| **LED**               | Light-emitting diode; turns on/off to emit light.                                               | - Blink LED<br>- Blink with potentiometer<br>- LED patterns              | [Open Blink.ino](https://github.com/cartaR02/HyperLabsArduino/blob/main/Examples/Blink/Blink.ino)                                       |
-| **Potentiometer**     | Variable resistor; outputs analog voltage depending on knob position.                           | - Read analog value<br>- Control LED brightness<br>- Control servo angle | [Open Potentiometer.ino](https://github.com/cartaR02/HyperLabsArduino/blob/main/Examples/Potentiometer/Potentiometer.ino)               |
-| **Piezo Buzzer**      | Produces sound when voltage is applied; can play tones or melodies.                             | - Play a tone<br>- Simple melody<br>- Alarm signal                       | [Open Buzzer.ino](https://github.com/cartaR02/HyperLabsArduino/blob/main/Examples/Buzzer/Buzzer.ino)                                    |
-| **DC Motor**          | Converts electrical energy to rotational motion; speed/direction controlled via PWM and driver. | - Motor forward/back<br>- PWM speed control<br>- Simple robot drive      | [Open Motor.ino](https://github.com/cartaR02/HyperLabsArduino/blob/main/Examples/Motor/Motor.ino)                                       |
-| **Servo Motor**       | Motor that moves to a specific angle; controlled by PWM signal.                                 | - Sweep servo<br>- Control via potentiometer<br>- Interactive project    | [Open Servo.ino](https://github.com/cartaR02/HyperLabsArduino/blob/main/Examples/Servo/Servo.ino)                                       |
-| **Ultrasonic Sensor** | Measures distance by sending sound pulses and measuring echo time.                              | - Measure distance<br>- Obstacle detection<br>- Parking aid              | [Open Ultrasonic.ino](https://github.com/cartaR02/HyperLabsArduino/blob/main/Examples/Ultrasonic/simpleUltrasonic/simpleUltrasonic.ino) |
-| **OLED Display**      | Small screen that shows text/graphics via I2C or SPI.                                           | - Show text<br>- Display sensor readings<br>- Simple game or graphics    | [Open OLED.ino](https://github.com/cartaR02/HyperLabsArduino/blob/main/Examples/OLED/SIMPLE_OLED/SIMPLE_OLED.ino)                       |
-
-Each folder contains a `.ino` sketch file that can be opened directly in the Arduino IDE.a
+```
+HyperLabsArduino/
+├── _quarto.yml            # Quarto project config
+├── custom.scss            # Custom theme / styling
+├── index.qmd              # Home page
+├── Beginner.qmd           # Beginner workshop page
+├── Intermediate.qmd       # Intermediate workshop page
+├── hyperlabs.png          # Logo / favicon
+├── BeginnerExamples/      # Beginner Arduino sketches
+│   ├── Blink/
+│   ├── Buzzer/
+│   ├── Coding/
+│   ├── Joystick/
+│   ├── Keypad/
+│   ├── Motor/
+│   ├── Oled/
+│   ├── Potentiometer/
+│   ├── Servo/
+│   ├── TempSensor/
+│   ├── Ultrasonic/
+│   └── encoder/
+├── IntermediateExamples/   # Intermediate Arduino sketches
+│   ├── Bluetooth/
+│   ├── IR-Remote/
+│   ├── MPU6050/
+│   └── RFID/
+├── Others/                 # Miscellaneous examples
+└── Games/                  # Fun interactive projects
+```
 
 ---
 
 ## Getting Started
 
-To use this repo:
+### 1. Install Arduino IDE
 
-1. **Install Arduino IDE**  
-   If you haven’t already: download and install the [Arduino IDE](https://www.arduino.cc/en/software) for your operating system.
+Download and install the [Arduino IDE](https://www.arduino.cc/en/software) for your operating system.
 
-2. **Set up your Arduino board**
-   - Connect your board (e.g., Arduino Uno) to your computer via USB.
-   - Open Arduino IDE → go to **Tools → Board** → select your board model.
-   - Go to **Tools → Port** → select the correct serial/USB port.
+### 2. Set Up Your Board
+
+1. Connect your Arduino (e.g., Uno) to your computer via USB
+2. Open Arduino IDE > **Tools > Board** > select your board model
+3. Go to **Tools > Port** > select the correct serial/USB port
+
+### 3. Upload a Sketch
+
+1. Open any `.ino` file from the examples folders
+2. Click the **Upload** button in the Arduino IDE
+3. Watch it run on your board
+
+---
+
+## Rendering the Quarto Site Locally
+
+Make sure you have [Quarto installed](https://quarto.org/docs/get-started/).
+
+**Render the site** (outputs to `_book/`):
+
+```bash
+quarto render
+```
+
+**Preview with live reload** (opens in your browser):
+
+```bash
+quarto preview
+```
+
+---
+
+## Publishing to GitHub Pages
+
+To publish the site to GitHub Pages, run:
+
+```bash
+quarto publish gh-pages
+```
+
+This will:
+
+1. Render the project
+2. Push the built site to the `gh-pages` branch
+3. GitHub Pages will serve it automatically
+
+> **First time?** Make sure GitHub Pages is enabled in your repo: **Settings > Pages > Source** set to `gh-pages` branch.
+
+---
+
+## Resources
+
+- [Arduino IDE](https://www.arduino.cc/en/software/)
+- [Arduino Language Reference](https://docs.arduino.cc/language-reference)
+- [Quarto Documentation](https://quarto.org/docs/guide/)
