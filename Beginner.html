@@ -142,6 +142,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#slides" id="toc-slides" class="nav-link active" data-scroll-target="#slides">Slides</a></li>
   <li><a href="#videos-and-guides" id="toc-videos-and-guides" class="nav-link" data-scroll-target="#videos-and-guides">Videos and Guides</a></li>
   <li><a href="#examples" id="toc-examples" class="nav-link" data-scroll-target="#examples">Examples</a></li>
+  <li><a href="#bluetooth-connection-guide" id="toc-bluetooth-connection-guide" class="nav-link" data-scroll-target="#bluetooth-connection-guide">Bluetooth Connection Guide</a></li>
   <li><a href="#getting-started" id="toc-getting-started" class="nav-link" data-scroll-target="#getting-started">Getting Started</a>
   <ul class="collapse">
   <li><a href="#install-arduino-ide" id="toc-install-arduino-ide" class="nav-link" data-scroll-target="#install-arduino-ide">1. Install Arduino IDE</a></li>
@@ -247,22 +248,22 @@ ul.task-list li input[type="checkbox"] {
 <td><a href="https://github.com/cartaR02/HyperLabsArduino/blob/main/BeginnerExamples/Potentiometer/Potentiometer.ino">Potentiometer.ino</a></td>
 </tr>
 <tr class="odd">
-<td><strong>Piezo Buzzer</strong></td>
-<td>Produces sound when voltage is applied; can play tones or melodies</td>
-<td>Play a tone, simple melody, alarm signal</td>
-<td><a href="https://github.com/cartaR02/HyperLabsArduino/blob/main/BeginnerExamples/Buzzer/Buzzer.ino">Buzzer.ino</a></td>
-</tr>
-<tr class="even">
 <td><strong>Servo Motor</strong></td>
 <td>Motor that moves to a specific angle; controlled by PWM signal</td>
 <td>Sweep servo, control via potentiometer, interactive project</td>
 <td><a href="https://github.com/cartaR02/HyperLabsArduino/blob/main/BeginnerExamples/Servo/Servo.ino">Servo.ino</a></td>
 </tr>
+<tr class="even">
+<td><strong>Piezo Buzzer</strong></td>
+<td>Produces sound when voltage is applied; can play tones or melodies</td>
+<td>Play a tone, simple melody, alarm signal</td>
+<td><a href="https://github.com/cartaR02/HyperLabsArduino/blob/main/BeginnerExamples/Buzzer/Buzzer.ino">Buzzer.ino</a></td>
+</tr>
 <tr class="odd">
-<td><strong>Ultrasonic Sensor</strong></td>
-<td>Measures distance by sending sound pulses and measuring echo time</td>
-<td>Measure distance, obstacle detection, parking aid</td>
-<td><a href="https://github.com/cartaR02/HyperLabsArduino/blob/main/BeginnerExamples/Ultrasonic/simpleUltrasonic/simpleUltrasonic.ino">Ultrasonic.ino</a></td>
+<td><strong>Coding Basics</strong></td>
+<td>Explore the fundamentals of Arduino programming</td>
+<td>Loops, functions, variables, conditionals, and more</td>
+<td><a href="https://github.com/cartaR02/HyperLabsArduino/blob/main/BeginnerExamples/Coding/basics.ino">basics.ino</a></td>
 </tr>
 <tr class="even">
 <td><strong>OLED Display</strong></td>
@@ -271,26 +272,72 @@ ul.task-list li input[type="checkbox"] {
 <td><a href="https://github.com/cartaR02/HyperLabsArduino/blob/main/BeginnerExamples/Oled/SIMPLE_OLED/SIMPLE_OLED.ino">OLED.ino</a> / <a href="https://github.com/cartaR02/HyperLabsArduino/blob/main/BeginnerExamples/Oled/commands.txt">OLED Commands</a></td>
 </tr>
 <tr class="odd">
-<td><strong>Keypad</strong></td>
-<td>Matrix of buttons in rows and columns, read by scanning pins</td>
-<td>Enter numbers, passcode system, control menus</td>
-<td><a href="https://github.com/cartaR02/HyperLabsArduino/blob/main/BeginnerExamples/Keypad/Keypad.ino">Keypad.ino</a></td>
+<td><strong>Ultrasonic Sensor</strong></td>
+<td>Measures distance by sending sound pulses and measuring echo time</td>
+<td>Measure distance, obstacle detection, parking aid</td>
+<td><a href="https://github.com/cartaR02/HyperLabsArduino/blob/main/BeginnerExamples/Ultrasonic/simpleUltrasonic/simpleUltrasonic.ino">Ultrasonic.ino</a></td>
 </tr>
 <tr class="even">
+<td><strong>Bluetooth</strong></td>
+<td>Uses radio waves (2.4 GHz) to create a short-range wireless connection, allowing your Arduino to send/receive data from a phone or computer</td>
+<td>Control lights with your phone, use inputs to drive a robot car</td>
+<td><a href="https://github.com/cartaR02/HyperLabsArduino/blob/main/IntermediateExamples/Bluetooth/controlLED.ino">controlLED.ino</a></td>
+</tr>
+<tr class="odd">
 <td><strong>Joystick</strong></td>
 <td>Analog input with two axes (X/Y) and a push button</td>
 <td>Control a cursor, navigate menus, game/robot control</td>
 <td><a href="https://github.com/cartaR02/HyperLabsArduino/blob/main/BeginnerExamples/Joystick/TiltPanServoJoystick.ino">Joystick.ino</a></td>
 </tr>
-<tr class="odd">
-<td><strong>Coding Basics</strong></td>
-<td>Explore the fundamentals of Arduino programming</td>
-<td>Loops, functions, variables, conditionals, and more</td>
-<td><a href="https://github.com/cartaR02/HyperLabsArduino/blob/main/BeginnerExamples/Coding/basics.ino">basics.ino</a></td>
+<tr class="even">
+<td><strong>Temp Sensor</strong></td>
+<td>Measures ambient temperature and outputs an analog or digital signal</td>
+<td>Display temperature on serial monitor, trigger fan/LED at threshold, weather station</td>
+<td><a href="https://github.com/cartaR02/HyperLabsArduino/blob/main/BeginnerExamples/TempSensor/TempSensor.ino">TempSensor.ino</a></td>
 </tr>
 </tbody>
 </table>
 <p>Each folder contains a <code>.ino</code> sketch file that can be opened directly in the Arduino IDE.</p>
+<hr>
+</section>
+<section id="bluetooth-connection-guide" class="level2">
+<h2 class="anchored" data-anchor-id="bluetooth-connection-guide">Bluetooth Connection Guide</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Step-by-Step: Arduino Bluetooth Connection
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<section id="instructions" class="level3">
+<h3 class="anchored" data-anchor-id="instructions">Instructions</h3>
+<ol type="1">
+<li><p><strong>Upload Code:</strong> Connect your Arduino via USB. Upload your code using the standard <code>usbmodem</code> port.</p></li>
+<li><p><strong>Pair Bluetooth:</strong> On your computer, find the Bluetooth module in your Bluetooth settings and pair with it. When prompted, use the password <code>1234</code>.</p></li>
+<li><p><strong>Connect in Software:</strong></p>
+<ul>
+<li>Once paired, go back to the Arduino IDE (or your serial monitor software)</li>
+<li>Go to <strong>Tools &gt; Port</strong></li>
+<li>Select the <em>new</em> Bluetooth port (it will have a different name, often containing “Bluetooth” or “HC-05”). <strong>Do not</strong> select the old <code>usbmodem</code> port</li>
+<li>Open the Serial Monitor — it should now be connected wirelessly</li>
+</ul></li>
+</ol>
+</section>
+<section id="troubleshooting" class="level3">
+<h3 class="anchored" data-anchor-id="troubleshooting">Troubleshooting</h3>
+<ul>
+<li><strong>Do not</strong> just click “Connect” from your computer’s Bluetooth settings after pairing. You <strong>must</strong> select the correct serial port from within <strong>Tools &gt; Port</strong> in the Arduino IDE.</li>
+<li><strong>Power loss:</strong> If you unplug or remove power from the Bluetooth module, it will disconnect. You may need to re-select the port or re-pair the device to reconnect.</li>
+</ul>
+</section>
+</div>
+</div>
+</div>
 <hr>
 </section>
 <section id="getting-started" class="level2">

@@ -141,7 +141,6 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#slides" id="toc-slides" class="nav-link active" data-scroll-target="#slides">Slides</a></li>
   <li><a href="#videos-and-guides" id="toc-videos-and-guides" class="nav-link" data-scroll-target="#videos-and-guides">Videos and Guides</a></li>
   <li><a href="#examples" id="toc-examples" class="nav-link" data-scroll-target="#examples">Examples</a></li>
-  <li><a href="#bluetooth-connection-guide" id="toc-bluetooth-connection-guide" class="nav-link" data-scroll-target="#bluetooth-connection-guide">Bluetooth Connection Guide</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/cartaR02/HyperLabsArduino/blob/main/Intermediate.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/cartaR02/HyperLabsArduino/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -167,7 +166,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Ready to go beyond the basics? This section covers wireless communication, motion sensing, and RFID — the building blocks for smarter, more interactive projects.</p>
+<p>Ready to go beyond the basics? This section covers motion sensing, wireless control, and RFID — the building blocks for smarter, more interactive projects.</p>
 <hr>
 <section id="slides" class="level2">
 <h2 class="anchored" data-anchor-id="slides">Slides</h2>
@@ -217,16 +216,16 @@ ul.task-list li input[type="checkbox"] {
 </thead>
 <tbody>
 <tr class="odd">
+<td><strong>Accelerometer (MPU6050)</strong></td>
+<td>6-axis IMU that measures acceleration and rotation on X, Y, Z axes</td>
+<td>Bubble level, motion-controlled servo, real-time data plotter</td>
+<td><a href="https://github.com/cartaR02/HyperLabsArduino/blob/main/IntermediateExamples/MPU6050/bubble_level.ino">bubble_level.ino</a></td>
+</tr>
+<tr class="even">
 <td><strong>IR Remote</strong></td>
 <td>Uses infrared light signals to wirelessly transmit data from a handheld remote to a receiver module</td>
 <td>Control LEDs remotely, change servo angle with buttons, toggle modes, build a remote-controlled robot</td>
 <td><a href="https://github.com/cartaR02/HyperLabsArduino/blob/main/IntermediateExamples/IR-Remote/IRRemote.ino">IRRemote.ino</a></td>
-</tr>
-<tr class="even">
-<td><strong>Bluetooth</strong></td>
-<td>Uses radio waves (2.4 GHz) to create a short-range wireless connection, allowing your Arduino to send/receive data from a phone or computer</td>
-<td>Control lights with your phone, use inputs to drive a robot car</td>
-<td><a href="https://github.com/cartaR02/HyperLabsArduino/blob/main/IntermediateExamples/Bluetooth/controlLED.ino">controlLED.ino</a></td>
 </tr>
 <tr class="odd">
 <td><strong>RFID</strong></td>
@@ -234,49 +233,15 @@ ul.task-list li input[type="checkbox"] {
 <td>Security door with accepted tags, access control systems</td>
 <td><a href="https://github.com/cartaR02/HyperLabsArduino/blob/main/IntermediateExamples/RFID/rfid-read-dump.ino">rfid-read-dump.ino</a></td>
 </tr>
+<tr class="even">
+<td><strong>Keypad</strong></td>
+<td>Matrix of buttons in rows and columns, read by scanning pins</td>
+<td>Enter numbers, passcode system, control menus</td>
+<td><a href="https://github.com/cartaR02/HyperLabsArduino/blob/main/BeginnerExamples/Keypad/Keypad.ino">Keypad.ino</a></td>
+</tr>
 </tbody>
 </table>
 <p>Each folder contains a <code>.ino</code> sketch file that can be opened directly in the Arduino IDE.</p>
-<hr>
-</section>
-<section id="bluetooth-connection-guide" class="level2">
-<h2 class="anchored" data-anchor-id="bluetooth-connection-guide">Bluetooth Connection Guide</h2>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Step-by-Step: Arduino Bluetooth Connection
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<section id="instructions" class="level3">
-<h3 class="anchored" data-anchor-id="instructions">Instructions</h3>
-<ol type="1">
-<li><p><strong>Upload Code:</strong> Connect your Arduino via USB. Upload your code using the standard <code>usbmodem</code> port.</p></li>
-<li><p><strong>Pair Bluetooth:</strong> On your computer, find the Bluetooth module in your Bluetooth settings and pair with it. When prompted, use the password <code>1234</code>.</p></li>
-<li><p><strong>Connect in Software:</strong></p>
-<ul>
-<li>Once paired, go back to the Arduino IDE (or your serial monitor software)</li>
-<li>Go to <strong>Tools &gt; Port</strong></li>
-<li>Select the <em>new</em> Bluetooth port (it will have a different name, often containing “Bluetooth” or “HC-05”). <strong>Do not</strong> select the old <code>usbmodem</code> port</li>
-<li>Open the Serial Monitor — it should now be connected wirelessly</li>
-</ul></li>
-</ol>
-</section>
-<section id="troubleshooting" class="level3">
-<h3 class="anchored" data-anchor-id="troubleshooting">Troubleshooting</h3>
-<ul>
-<li><strong>Do not</strong> just click “Connect” from your computer’s Bluetooth settings after pairing. You <strong>must</strong> select the correct serial port from within <strong>Tools &gt; Port</strong> in the Arduino IDE.</li>
-<li><strong>Power loss:</strong> If you unplug or remove power from the Bluetooth module, it will disconnect. You may need to re-select the port or re-pair the device to reconnect.</li>
-</ul>
-</section>
-</div>
-</div>
-</div>
 
 
 </section>

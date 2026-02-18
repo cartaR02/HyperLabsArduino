@@ -74,7 +74,17 @@
     "href": "Beginner.html#examples",
     "title": "Beginner Workshop",
     "section": "Examples",
-    "text": "Examples\n\n\n\nComponent\nWhat It Does\nProject Ideas\nCode\n\n\n\n\nLED\nLight-emitting diode; turns on/off to emit light\nBlink LED, blink with potentiometer, LED patterns\nBlink.ino\n\n\nPotentiometer\nVariable resistor; outputs analog voltage based on knob position\nRead analog value, control LED brightness, control servo angle\nPotentiometer.ino\n\n\nPiezo Buzzer\nProduces sound when voltage is applied; can play tones or melodies\nPlay a tone, simple melody, alarm signal\nBuzzer.ino\n\n\nServo Motor\nMotor that moves to a specific angle; controlled by PWM signal\nSweep servo, control via potentiometer, interactive project\nServo.ino\n\n\nUltrasonic Sensor\nMeasures distance by sending sound pulses and measuring echo time\nMeasure distance, obstacle detection, parking aid\nUltrasonic.ino\n\n\nOLED Display\nSmall screen that shows text/graphics via I2C or SPI\nShow text, display sensor readings, simple graphics\nOLED.ino / OLED Commands\n\n\nKeypad\nMatrix of buttons in rows and columns, read by scanning pins\nEnter numbers, passcode system, control menus\nKeypad.ino\n\n\nJoystick\nAnalog input with two axes (X/Y) and a push button\nControl a cursor, navigate menus, game/robot control\nJoystick.ino\n\n\nCoding Basics\nExplore the fundamentals of Arduino programming\nLoops, functions, variables, conditionals, and more\nbasics.ino\n\n\n\nEach folder contains a .ino sketch file that can be opened directly in the Arduino IDE.",
+    "text": "Examples\n\n\n\nComponent\nWhat It Does\nProject Ideas\nCode\n\n\n\n\nLED\nLight-emitting diode; turns on/off to emit light\nBlink LED, blink with potentiometer, LED patterns\nBlink.ino\n\n\nPotentiometer\nVariable resistor; outputs analog voltage based on knob position\nRead analog value, control LED brightness, control servo angle\nPotentiometer.ino\n\n\nServo Motor\nMotor that moves to a specific angle; controlled by PWM signal\nSweep servo, control via potentiometer, interactive project\nServo.ino\n\n\nPiezo Buzzer\nProduces sound when voltage is applied; can play tones or melodies\nPlay a tone, simple melody, alarm signal\nBuzzer.ino\n\n\nCoding Basics\nExplore the fundamentals of Arduino programming\nLoops, functions, variables, conditionals, and more\nbasics.ino\n\n\nOLED Display\nSmall screen that shows text/graphics via I2C or SPI\nShow text, display sensor readings, simple graphics\nOLED.ino / OLED Commands\n\n\nUltrasonic Sensor\nMeasures distance by sending sound pulses and measuring echo time\nMeasure distance, obstacle detection, parking aid\nUltrasonic.ino\n\n\nBluetooth\nUses radio waves (2.4 GHz) to create a short-range wireless connection, allowing your Arduino to send/receive data from a phone or computer\nControl lights with your phone, use inputs to drive a robot car\ncontrolLED.ino\n\n\nJoystick\nAnalog input with two axes (X/Y) and a push button\nControl a cursor, navigate menus, game/robot control\nJoystick.ino\n\n\nTemp Sensor\nMeasures ambient temperature and outputs an analog or digital signal\nDisplay temperature on serial monitor, trigger fan/LED at threshold, weather station\nTempSensor.ino\n\n\n\nEach folder contains a .ino sketch file that can be opened directly in the Arduino IDE.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Beginner Workshop</span>"
+    ]
+  },
+  {
+    "objectID": "Beginner.html#bluetooth-connection-guide",
+    "href": "Beginner.html#bluetooth-connection-guide",
+    "title": "Beginner Workshop",
+    "section": "Bluetooth Connection Guide",
+    "text": "Bluetooth Connection Guide\n\n\n\n\n\n\nStep-by-Step: Arduino Bluetooth Connection\n\n\n\n\n\n\nInstructions\n\nUpload Code: Connect your Arduino via USB. Upload your code using the standard usbmodem port.\nPair Bluetooth: On your computer, find the Bluetooth module in your Bluetooth settings and pair with it. When prompted, use the password 1234.\nConnect in Software:\n\nOnce paired, go back to the Arduino IDE (or your serial monitor software)\nGo to Tools &gt; Port\nSelect the new Bluetooth port (it will have a different name, often containing “Bluetooth” or “HC-05”). Do not select the old usbmodem port\nOpen the Serial Monitor — it should now be connected wirelessly\n\n\n\n\nTroubleshooting\n\nDo not just click “Connect” from your computer’s Bluetooth settings after pairing. You must select the correct serial port from within Tools &gt; Port in the Arduino IDE.\nPower loss: If you unplug or remove power from the Bluetooth module, it will disconnect. You may need to re-select the port or re-pair the device to reconnect.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Beginner Workshop</span>"
     ]
@@ -94,7 +104,7 @@
     "href": "Intermediate.html",
     "title": "Intermediate Workshop",
     "section": "",
-    "text": "Slides\nReady to go beyond the basics? This section covers wireless communication, motion sensing, and RFID — the building blocks for smarter, more interactive projects.",
+    "text": "Slides\nReady to go beyond the basics? This section covers motion sensing, wireless control, and RFID — the building blocks for smarter, more interactive projects.",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Intermediate Workshop</span>"
     ]
@@ -124,17 +134,7 @@
     "href": "Intermediate.html#examples",
     "title": "Intermediate Workshop",
     "section": "Examples",
-    "text": "Examples\n\n\n\nComponent\nWhat It Does\nProject Ideas\nCode\n\n\n\n\nIR Remote\nUses infrared light signals to wirelessly transmit data from a handheld remote to a receiver module\nControl LEDs remotely, change servo angle with buttons, toggle modes, build a remote-controlled robot\nIRRemote.ino\n\n\nBluetooth\nUses radio waves (2.4 GHz) to create a short-range wireless connection, allowing your Arduino to send/receive data from a phone or computer\nControl lights with your phone, use inputs to drive a robot car\ncontrolLED.ino\n\n\nRFID\nRadio Frequency Identification — uses radio waves from a reader to identify objects with embedded tags. NFC is a short-range version used in phones and key fobs\nSecurity door with accepted tags, access control systems\nrfid-read-dump.ino\n\n\n\nEach folder contains a .ino sketch file that can be opened directly in the Arduino IDE.",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Intermediate Workshop</span>"
-    ]
-  },
-  {
-    "objectID": "Intermediate.html#bluetooth-connection-guide",
-    "href": "Intermediate.html#bluetooth-connection-guide",
-    "title": "Intermediate Workshop",
-    "section": "Bluetooth Connection Guide",
-    "text": "Bluetooth Connection Guide\n\n\n\n\n\n\nStep-by-Step: Arduino Bluetooth Connection\n\n\n\n\n\n\nInstructions\n\nUpload Code: Connect your Arduino via USB. Upload your code using the standard usbmodem port.\nPair Bluetooth: On your computer, find the Bluetooth module in your Bluetooth settings and pair with it. When prompted, use the password 1234.\nConnect in Software:\n\nOnce paired, go back to the Arduino IDE (or your serial monitor software)\nGo to Tools &gt; Port\nSelect the new Bluetooth port (it will have a different name, often containing “Bluetooth” or “HC-05”). Do not select the old usbmodem port\nOpen the Serial Monitor — it should now be connected wirelessly\n\n\n\n\nTroubleshooting\n\nDo not just click “Connect” from your computer’s Bluetooth settings after pairing. You must select the correct serial port from within Tools &gt; Port in the Arduino IDE.\nPower loss: If you unplug or remove power from the Bluetooth module, it will disconnect. You may need to re-select the port or re-pair the device to reconnect.",
+    "text": "Examples\n\n\n\nComponent\nWhat It Does\nProject Ideas\nCode\n\n\n\n\nAccelerometer (MPU6050)\n6-axis IMU that measures acceleration and rotation on X, Y, Z axes\nBubble level, motion-controlled servo, real-time data plotter\nbubble_level.ino\n\n\nIR Remote\nUses infrared light signals to wirelessly transmit data from a handheld remote to a receiver module\nControl LEDs remotely, change servo angle with buttons, toggle modes, build a remote-controlled robot\nIRRemote.ino\n\n\nRFID\nRadio Frequency Identification — uses radio waves from a reader to identify objects with embedded tags. NFC is a short-range version used in phones and key fobs\nSecurity door with accepted tags, access control systems\nrfid-read-dump.ino\n\n\nKeypad\nMatrix of buttons in rows and columns, read by scanning pins\nEnter numbers, passcode system, control menus\nKeypad.ino\n\n\n\nEach folder contains a .ino sketch file that can be opened directly in the Arduino IDE.",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Intermediate Workshop</span>"
     ]
