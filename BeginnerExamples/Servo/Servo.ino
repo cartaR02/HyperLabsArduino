@@ -14,7 +14,7 @@ void setup()
 int degrees = 0;
 void loop() 
 {
-  while (!Serial.available());
+  // This normally takes userinput from the serial monitor to 
   int deg = Serial.parseInt();
   myservo.write(deg);
   Serial.println(deg);
