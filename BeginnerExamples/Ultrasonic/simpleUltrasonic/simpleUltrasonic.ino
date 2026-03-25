@@ -4,9 +4,6 @@
 #define TRIG 9
 #define ECHO 8
 
-#define MIN_DIST 0
-#define MAX_DIST 40
-
 UltraSonicDistanceSensor distanceSensor(TRIG, ECHO); // initialize sensor
 
 void setup () 
