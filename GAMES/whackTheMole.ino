@@ -19,6 +19,7 @@ long moleStartTime = 0;
 int activeMole = -1;        
 bool waitingForHit = false; 
 int score = 0; 
+bool gameStarted = false; 
 
 void setup() {
   Serial.begin(9600);
@@ -37,19 +38,40 @@ void setup() {
   }
   
   // Show Start Screen
-  display.clearDisplay();
-  display.setTextSize(2);
-  display.setTextColor(SSD1306_WHITE);
-  display.setCursor(10, 20);
-  display.print("GET READY!");
-  display.display();
-  delay(3000);
-  
-  updateScoreDisplay(); 
+  showStartScreen();
 }
 
 void loop() {
   
+  // 0. Wait for a button press to start the game
+  if (!gameStarted) {
+    for (int i = 0; i < 3; i++) {
+      if (digitalRead(buttonPins[i]) == LOW) {
+        
+        display.clearDisplay();
+        display.setTextSize(2);
+        display.setTextColor(SSD1306_WHITE);
+        display.setCursor(10, 20);
+        display.print("GET READY!");
+        display.display();
+        
+        // Wait for player to release the button
+        while (digitalRead(buttonPins[0]) == LOW || 
+               digitalRead(buttonPins[1]) == LOW || 
+               digitalRead(buttonPins[2]) == LOW) {
+          delay(10);
+        }
+        
+        delay(1500); 
+        
+        gameStarted = true;
+        updateScoreDisplay();
+        break;
+      }
+    }
+    return; 
+  }
+
   // 1. Pop up a new mole
   if (!waitingForHit) {
     activeMole = random(0, 3); 
@@ -67,7 +89,6 @@ void loop() {
   if (waitingForHit) {
     for (int i = 0; i < 3; i++) {
       
-      // Since we use INPUT_PULLUP, a pressed button reads as LOW
       if (digitalRead(buttonPins[i]) == LOW) {
         
         if (i == activeMole) {
@@ -110,23 +131,46 @@ void updateScoreDisplay() {
   display.display();
 }
 
+void showStartScreen() {
+  display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(SSD1306_WHITE);
+  display.setCursor(15, 10);
+  display.print("WHACK-A-MOLE");
+  
+  display.setCursor(0, 40);
+  display.print("Press any button...");
+  display.display();
+}
+
 void showGameOver(String reason) {
   waitingForHit = false;
   digitalWrite(molePins[activeMole], LOW); 
   
   // Update OLED to show failure
   display.clearDisplay();
+  
+  // Title
   display.setTextSize(2);
   display.setCursor(0, 0);
   display.print("GAME OVER");
   
+  // Reason for losing
   display.setTextSize(1);
-  display.setCursor(0, 30);
+  display.setCursor(0, 20); // Moved up slightly to make room
   display.print(reason);
   
-  display.setCursor(0, 50);
+  // Final Score
+  display.setCursor(0, 35); // Moved up slightly
   display.print("Final Score: ");
   display.print(score);
+
+  // Final Speed (NEW)
+  display.setCursor(0, 50); // Added new line at the bottom
+  display.print("Final Speed: ");
+  display.print(timeAllowed);
+  display.print("ms");
+  
   display.display();
 
   // Flash LEDs to signal failure
@@ -137,11 +181,12 @@ void showGameOver(String reason) {
     delay(250);
   }
 
-  // Wait before resetting so they can read their score
-  delay(3000); 
+  // Wait before resetting so they can read their score and speed
+  delay(3500); 
 
   // Reset Game Variables
   timeAllowed = 2000; 
   score = 0;
-  updateScoreDisplay(); 
+  gameStarted = false; 
+  showStartScreen(); 
 }
