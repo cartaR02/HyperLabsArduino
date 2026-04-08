@@ -165,7 +165,7 @@ void showGameOver(String reason) {
   display.print("Final Score: ");
   display.print(score);
 
-  // Final Speed (NEW)
+  // Final Speed
   display.setCursor(0, 50); // Added new line at the bottom
   display.print("Final Speed: ");
   display.print(timeAllowed);
